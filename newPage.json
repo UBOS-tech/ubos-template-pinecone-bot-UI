@@ -18014,7 +18014,7 @@
                                                                                 "parentColumnSpace": 11.439453125,
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 1,
-                                                                                "rightColumn": 63,
+                                                                                "rightColumn": 52,
                                                                                 "topRow": 0,
                                                                                 "bottomRow": 7,
                                                                                 "parentId": "i9deeg6we5",
@@ -18055,7 +18055,7 @@
                                                                                 "parentColumnSpace": 11.439453125,
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 1,
-                                                                                "rightColumn": 63,
+                                                                                "rightColumn": 52,
                                                                                 "topRow": 7,
                                                                                 "bottomRow": 14,
                                                                                 "parentId": "i9deeg6we5",
@@ -18096,7 +18096,7 @@
                                                                                 "parentColumnSpace": 11.439453125,
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 1,
-                                                                                "rightColumn": 63,
+                                                                                "rightColumn": 52,
                                                                                 "topRow": 21,
                                                                                 "bottomRow": 28,
                                                                                 "parentId": "i9deeg6we5",
@@ -18137,7 +18137,7 @@
                                                                                 "parentColumnSpace": 8.1826171875,
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 1,
-                                                                                "rightColumn": 63,
+                                                                                "rightColumn": 52,
                                                                                 "topRow": 14,
                                                                                 "bottomRow": 21,
                                                                                 "parentId": "i9deeg6we5",
@@ -18178,7 +18178,7 @@
                                                                                 "parentColumnSpace": 8.1826171875,
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 1,
-                                                                                "rightColumn": 63,
+                                                                                "rightColumn": 52,
                                                                                 "topRow": 28,
                                                                                 "bottomRow": 35,
                                                                                 "parentId": "i9deeg6we5",
@@ -18219,7 +18219,7 @@
                                                                                 "parentColumnSpace": 8.1826171875,
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 1,
-                                                                                "rightColumn": 63,
+                                                                                "rightColumn": 52,
                                                                                 "topRow": 35,
                                                                                 "bottomRow": 42,
                                                                                 "parentId": "i9deeg6we5",
@@ -18262,7 +18262,7 @@
                                                                                 "parentColumnSpace": 8.1826171875,
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 1,
-                                                                                "rightColumn": 63,
+                                                                                "rightColumn": 52,
                                                                                 "topRow": 42,
                                                                                 "bottomRow": 49,
                                                                                 "parentId": "i9deeg6we5",
@@ -18309,6 +18309,170 @@
                                                                                 ],
                                                                                 "borderRadius": "ROUNDED",
                                                                                 "onClick": "{{saveCredentials.run()}}"
+                                                                            },
+                                                                            {
+                                                                                "isVisible": true,
+                                                                                "text": "Read more ⇥ ",
+                                                                                "fontSize": "PARAGRAPH",
+                                                                                "fontStyle": "BOLD,ITALIC",
+                                                                                "textAlign": "RIGHT",
+                                                                                "textColor": "#3366FF",
+                                                                                "truncateButtonColor": "#FFC13D",
+                                                                                "widgetName": "Text3",
+                                                                                "shouldTruncate": false,
+                                                                                "overflow": "NONE",
+                                                                                "version": 1,
+                                                                                "animateLoading": true,
+                                                                                "type": "TEXT_WIDGET",
+                                                                                "hideCard": false,
+                                                                                "displayName": "Text",
+                                                                                "key": "0pc0a6m45z",
+                                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                                "widgetId": "b1gu5xfd3g",
+                                                                                "renderMode": "CANVAS",
+                                                                                "isLoading": false,
+                                                                                "parentColumnSpace": 15.30419921875,
+                                                                                "parentRowSpace": 10,
+                                                                                "leftColumn": 52,
+                                                                                "rightColumn": 64,
+                                                                                "topRow": 0,
+                                                                                "bottomRow": 4,
+                                                                                "parentId": "i9deeg6we5",
+                                                                                "onClick": "{{navigateTo('https://community.ubos.tech/vika/customersupportchatbot-1ac8/#telegram', {},'NEW_WINDOW')}}",
+                                                                                "dynamicPropertyPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ],
+                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicTriggerPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "isVisible": true,
+                                                                                "text": "Read more ⇥ ",
+                                                                                "fontSize": "PARAGRAPH",
+                                                                                "fontStyle": "BOLD,ITALIC",
+                                                                                "textAlign": "RIGHT",
+                                                                                "textColor": "#3366FF",
+                                                                                "truncateButtonColor": "#FFC13D",
+                                                                                "widgetName": "Text4",
+                                                                                "shouldTruncate": false,
+                                                                                "overflow": "NONE",
+                                                                                "version": 1,
+                                                                                "animateLoading": true,
+                                                                                "type": "TEXT_WIDGET",
+                                                                                "hideCard": false,
+                                                                                "displayName": "Text",
+                                                                                "key": "0pc0a6m45z",
+                                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                                "widgetId": "q19tfnz2yq",
+                                                                                "renderMode": "CANVAS",
+                                                                                "isLoading": false,
+                                                                                "parentColumnSpace": 15.30419921875,
+                                                                                "parentRowSpace": 10,
+                                                                                "leftColumn": 52,
+                                                                                "rightColumn": 64,
+                                                                                "topRow": 7,
+                                                                                "bottomRow": 11,
+                                                                                "parentId": "i9deeg6we5",
+                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicTriggerPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ],
+                                                                                "onClick": "{{navigateTo('https://community.ubos.tech/vika/customersupportchatbot-1ac8/#telegram', {},'NEW_WINDOW')}}\n",
+                                                                                "dynamicPropertyPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "isVisible": true,
+                                                                                "text": "Read more ⇥ ",
+                                                                                "fontSize": "PARAGRAPH",
+                                                                                "fontStyle": "ITALIC,BOLD",
+                                                                                "textAlign": "RIGHT",
+                                                                                "textColor": "#3366FF",
+                                                                                "truncateButtonColor": "#FFC13D",
+                                                                                "widgetName": "Text5",
+                                                                                "shouldTruncate": false,
+                                                                                "overflow": "NONE",
+                                                                                "version": 1,
+                                                                                "animateLoading": true,
+                                                                                "type": "TEXT_WIDGET",
+                                                                                "hideCard": false,
+                                                                                "displayName": "Text",
+                                                                                "key": "0pc0a6m45z",
+                                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                                "widgetId": "3ierp5c790",
+                                                                                "renderMode": "CANVAS",
+                                                                                "isLoading": false,
+                                                                                "parentColumnSpace": 15.30419921875,
+                                                                                "parentRowSpace": 10,
+                                                                                "leftColumn": 52,
+                                                                                "rightColumn": 64,
+                                                                                "topRow": 21,
+                                                                                "bottomRow": 25,
+                                                                                "parentId": "i9deeg6we5",
+                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicTriggerPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ],
+                                                                                "onClick": "{{navigateTo('https://community.ubos.tech/vika/customersupportchatbot-1ac8/#openai', {},'NEW_WINDOW')}}",
+                                                                                "dynamicPropertyPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            {
+                                                                                "isVisible": true,
+                                                                                "text": "Read more ⇥ ",
+                                                                                "fontSize": "PARAGRAPH",
+                                                                                "fontStyle": "BOLD,ITALIC",
+                                                                                "textAlign": "RIGHT",
+                                                                                "textColor": "#3366FF",
+                                                                                "truncateButtonColor": "#FFC13D",
+                                                                                "widgetName": "Text6",
+                                                                                "shouldTruncate": false,
+                                                                                "overflow": "NONE",
+                                                                                "version": 1,
+                                                                                "animateLoading": true,
+                                                                                "type": "TEXT_WIDGET",
+                                                                                "hideCard": false,
+                                                                                "displayName": "Text",
+                                                                                "key": "0pc0a6m45z",
+                                                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                                                "widgetId": "rpaifki1i5",
+                                                                                "renderMode": "CANVAS",
+                                                                                "isLoading": false,
+                                                                                "parentColumnSpace": 15.30419921875,
+                                                                                "parentRowSpace": 10,
+                                                                                "leftColumn": 52,
+                                                                                "rightColumn": 64,
+                                                                                "topRow": 28,
+                                                                                "bottomRow": 32,
+                                                                                "parentId": "i9deeg6we5",
+                                                                                "onClick": "{{navigateTo('https://www.pinecone.io/', {},'NEW_WINDOW')}}",
+                                                                                "dynamicPropertyPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ],
+                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicTriggerPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ]
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -18488,6 +18652,10 @@
                         "env",
                         "indexx",
                         "Button1",
+                        "Text3",
+                        "Text4",
+                        "Text5",
+                        "Text6",
                         "Text2",
                         "Divider1"
                     ],
