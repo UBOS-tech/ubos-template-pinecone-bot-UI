@@ -20,12 +20,12 @@
   
 </div>
 
-Welcome to our "Open AI Telegram Bot" template! With the help of this template, you can effortlessly create a comprehensive knowledge base for your bot. It offers support for processing diverse types of data, including .txt and .pdf files, as well as the ability to read links and extract valuable text information from websites.
+Welcome to our "Open AI Telegram Bot + Pinecone" template! With the help of this template, you can effortlessly create a comprehensive knowledge base for your bot. It offers support for processing diverse types of data, including .txt and .pdf files, as well as the ability to read links and extract valuable text information from websites.
 
 To enhance the functionality of the bot, we have integrated the Pinecone vector base, which serves as both a database and a semantic search engine. This enables efficient storage and retrieval of information based on similarity and relevance. Additionally, our template leverages Telegram and GPT chat for seamless user interaction.
 
 ## To quickly get started
-We recommend filling out the settings page. There, you will find all the necessary links for generating keys and configuring the template to suit your specific requirements. These settings will ensure smooth integration and optimal performance of your Open AI Telegram Bot.
+We recommend filling out the settings page. There, you will find all the necessary links for generating keys and configuring the template to suit your specific requirements. These settings will ensure smooth integration and optimal performance of your Open AI Telegram Bot + Pinecone.
 
 <img width="1912" alt="ubos-template-pinecone-bot-UI" src="https://github.com/UBOS-tech/ubos-template-pinecone-bot-UI/assets/89807001/6fe317f8-b117-4117-97d5-88a8be5ed6de">
 
@@ -48,7 +48,7 @@ The template will fetch the relevant text from the specified webpage and incorpo
 
 Language Requirements:
 
-Currently, the "Open AI Telegram Bot" template supports English language content exclusively.
+Currently, the "Open AI Telegram Bot + Pinecone" template supports English language content exclusively.
 Make sure that the files or webpages you add for text extraction are in English to ensure accurate processing and optimal results.
 
 File name:
