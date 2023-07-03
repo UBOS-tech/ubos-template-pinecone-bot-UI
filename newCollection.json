@@ -1,0 +1,354 @@
+[
+    {
+        "_id": "6364e18e65d44c1100000006",
+        "name": "JSObject1",
+        "pageId": "User Management",
+        "organizationId": "Org",
+        "body": "export default {\n\teditUserRole: async () => {\n\t\tawait editUserRole.run();\n\t\tcloseModal('ModalEditRole');\n\t\tgetUsers.run();\n\t},\n\tcreateUser: async () => {\n\t\tawait createUser.run();\n\t\tcloseModal('ModalCreateUser');\n\t\tgetUsers.run();\n\t}\n}",
+        "variables": [],
+        "actions": [
+            {
+                "_id": "6364e18ec2e17400119dc7f1",
+                "name": "editUserRole",
+                "pageId": "User Management",
+                "organizationId": "Org",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "async () => {\n\t\tawait editUserRole.run();\n\t\tcloseModal('ModalEditRole');\n\t\tgetUsers.run();\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "collectionId": "6364e18e65d44c1100000006",
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "organizationId": "Org",
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.myFun2",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "async () => {\n\t\t//use async-await or promises\n\t}"
+                ],
+                "pluginType": "JS",
+                "id": "6364e18ec2e17400119dc7f1"
+            },
+            {
+                "name": "createUser",
+                "collectionId": "6364e18e65d44c1100000006",
+                "executeOnLoad": false,
+                "pageId": "User Management",
+                "organizationId": "Org",
+                "actionConfiguration": {
+                    "body": "async () => {\n\t\tawait createUser.run();\n\t\tcloseModal('ModalCreateUser');\n\t\tgetUsers.run();\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 0,
+                    "jsArguments": []
+                }
+            }
+        ],
+        "applicationId": "jetsondashboard",
+        "pluginType": "JS",
+        "id": "6364e18e65d44c1100000006",
+        "actionIds": [],
+        "archivedActionIds": [],
+        "archivedActions": [],
+        "pluginId": "JS",
+        "workspaceId": "Org"
+    },
+    {
+        "id": "64994bafedd3b9b22ecf75c2",
+        "name": "JSObject1",
+        "pageId": "BaseDetails",
+        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\tlet result = List1.items.map((e)=> {\n\nreturn {\n\t\t\tquestion: e.Input1.text,\n\t\t\tid: e.Input4.text,\n\t\t\tresult: e.Input2.text,\n\t\t\turl: Table1.selectedRow.url,\n\t\t\tpinecone: Checkbox1.isChecked,\n\t\t\tidBase: Table1.selectedRow._id,\n\t\t}\n\t})\n\nreturn result\t\n\n},\n\tmyFun2:  () => {\n\tlet result = List2.items.map((e)=> {\n\t\treturn {\n\t\t\tquestion: e.Input1Copy.text,\n\t\t\tresult: e.Input2Copy.text,\n\t\t\tid: e.Input5.text,\n\t\t\turl: Table2.selectedRow.name,\n\t\t\tpinecone: Checkbox1Copy.isChecked,\n\t\t\tidBase: Table2.selectedRow._id,\n\t\t}\n\t})\nreturn result\t\t\n\t},\n\n\tmyFun3:  () => {\n\tlet result = List3.items.map((e)=> {\n\t\treturn {\n\t\t\tquestion: e.Input1Copy1.text,\n\t\t\tresult: e.Input2Copy1.text,\n\t\t\tid: e.Input6.text,\n\t\t\turl: Table2.selectedRow.name,\n\t\t\tpinecone: Checkbox1Copy1.isChecked,\n\t\t\tidBase: Table3.selectedRow._id,\n\t\t}\n\t})\nreturn result\t\t\n\t},\n\tmyFun4:  () => {\n\tlet result = List3Copy.items.map((e)=> {\n\t\treturn {\n\t\t\tquestion: e.Input1Copy1Copy.text,\n\t\t\tresult: e.Input2Copy1Copy.text,\n\t\t\tid: e.Input6Copy.text,\n\t\t\turl: Table2.selectedRow.name,\n\t\t\tpinecone: Checkbox4.isChecked,\n\t\t\tidBase: Table4.selectedRow._id,\n\t\t}\n\t})\n\t\t\tconsole.log(result)\n\nreturn result\t\t\n\t}\n}",
+        "variables": [
+            {
+                "name": "myVar1",
+                "value": []
+            },
+            {
+                "name": "myVar2",
+                "value": {}
+            }
+        ],
+        "actions": [
+            {
+                "name": "myFun3",
+                "collectionId": "64994bafedd3b9b22ecf75c2",
+                "executeOnLoad": false,
+                "pageId": "BaseDetails",
+                "actionConfiguration": {
+                    "body": "() => {\n\tlet result = List3.items.map((e)=> {\n\t\treturn {\n\t\t\tquestion: e.Input1Copy1.text,\n\t\t\tresult: e.Input2Copy1.text,\n\t\t\tid: e.Input6.text,\n\t\t\turl: Table2.selectedRow.name,\n\t\t\tpinecone: Checkbox1Copy1.isChecked,\n\t\t\tidBase: Table3.selectedRow._id,\n\t\t}\n\t})\nreturn result\t\t\n\t}",
+                    "isAsync": false,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "_id": "64a28581edd3b9b22ecf75e3",
+                "id": "64a28581edd3b9b22ecf75e3",
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.myFun3",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "() => {\n\tlet result = List2.items.map((e)=> {\n\t\treturn {\n\t\t\tquestion: e.Input1Copy.text,\n\t\t\tresult: e.Input2Copy.text,\n\t\t\tid: e.Input5.text,\n\t\t\turl: Table2.selectedRow.name,\n\t\t\tpinecone: Checkbox1Copy.isChecked,\n\t\t\tidBase: Table2.selectedRow._id,\n\t\t}\n\t})\nreturn result\t\t\n\t}"
+                ],
+                "pluginType": "JS"
+            },
+            {
+                "name": "myFun1",
+                "pageId": "BaseDetails",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "() => {\n\tlet result = List1.items.map((e)=> {\n\nreturn {\n\t\t\tquestion: e.Input1.text,\n\t\t\tid: e.Input4.text,\n\t\t\tresult: e.Input2.text,\n\t\t\turl: Table1.selectedRow.url,\n\t\t\tpinecone: Checkbox1.isChecked,\n\t\t\tidBase: Table1.selectedRow._id,\n\t\t}\n\t})\n\nreturn result\t\n\n}",
+                    "isAsync": false,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "64994bafedd3b9b22ecf75c3",
+                "id": "64994bafedd3b9b22ecf75c3",
+                "collectionId": "64994bafedd3b9b22ecf75c2",
+                "confirmBeforeExecute": false,
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.myFun1",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "() => {\n\t\t//write code here\n\t}"
+                ],
+                "pluginType": "JS"
+            },
+            {
+                "name": "myFun2",
+                "pageId": "BaseDetails",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "() => {\n\tlet result = List2.items.map((e)=> {\n\t\treturn {\n\t\t\tquestion: e.Input1Copy.text,\n\t\t\tresult: e.Input2Copy.text,\n\t\t\tid: e.Input5.text,\n\t\t\turl: Table2.selectedRow.name,\n\t\t\tpinecone: Checkbox1Copy.isChecked,\n\t\t\tidBase: Table2.selectedRow._id,\n\t\t}\n\t})\nreturn result\t\t\n\t}",
+                    "isAsync": false,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "64994bafedd3b9b22ecf75c4",
+                "id": "64994bafedd3b9b22ecf75c4",
+                "collectionId": "64994bafedd3b9b22ecf75c2",
+                "confirmBeforeExecute": false,
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.myFun2",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "async () => {\n\t\t//use async-await or promises\n\t}"
+                ],
+                "pluginType": "JS"
+            },
+            {
+                "name": "myFun4",
+                "collectionId": "64994bafedd3b9b22ecf75c2",
+                "executeOnLoad": false,
+                "pageId": "BaseDetails",
+                "actionConfiguration": {
+                    "body": "() => {\n\tlet result = List3Copy.items.map((e)=> {\n\t\treturn {\n\t\t\tquestion: e.Input1Copy1Copy.text,\n\t\t\tresult: e.Input2Copy1Copy.text,\n\t\t\tid: e.Input6Copy.text,\n\t\t\turl: Table2.selectedRow.name,\n\t\t\tpinecone: Checkbox4.isChecked,\n\t\t\tidBase: Table4.selectedRow._id,\n\t\t}\n\t})\n\t\t\tconsole.log(result)\n\nreturn result\t\t\n\t}",
+                    "isAsync": false,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "_id": "64a1c5d9edd3b9b22ecf75dc",
+                "id": "64a1c5d9edd3b9b22ecf75dc",
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.myFun4",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "() => {\n\tlet result = List2.items.map((e)=> {\n\t\treturn {\n\t\t\tquestion: e.Input1Copy.text,\n\t\t\tresult: e.Input2Copy.text,\n\t\t\tid: e.Input5.text,\n\t\t\turl: Table2.selectedRow.name,\n\t\t\tpinecone: Checkbox1Copy.isChecked,\n\t\t\tidBase: Table2.selectedRow._id,\n\t\t}\n\t})\nreturn result\t\t\n\t}"
+                ],
+                "pluginType": "JS"
+            }
+        ],
+        "applicationId": "jetsondashboard",
+        "pluginType": "JS",
+        "_id": "64994bafedd3b9b22ecf75c2",
+        "pluginId": "JS",
+        "actionIds": [],
+        "archivedActionIds": [],
+        "archivedActions": []
+    },
+    {
+        "id": "64a1c91cedd3b9b22ecf75de",
+        "name": "JSObject2",
+        "pageId": "BaseDetails",
+        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: async (id) => {\n await storeValue('idToDelete', id)\n await deleteVector.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\n\n\t},\n\tmyFun2: async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t}\n}",
+        "variables": [
+            {
+                "name": "myVar1",
+                "value": []
+            },
+            {
+                "name": "myVar2",
+                "value": {}
+            }
+        ],
+        "actions": [
+            {
+                "name": "myFun1",
+                "pageId": "BaseDetails",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "async (id) => {\n await storeValue('idToDelete', id)\n await deleteVector.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\n\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [
+                        {
+                            "name": "id"
+                        }
+                    ],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "64a1c91cedd3b9b22ecf75df",
+                "id": "64a1c91cedd3b9b22ecf75df",
+                "collectionId": "64a1c91cedd3b9b22ecf75de",
+                "confirmBeforeExecute": false,
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject2.myFun1",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "() => {\n\t\t//write code here\n\t}"
+                ],
+                "pluginType": "JS"
+            },
+            {
+                "name": "myFun2",
+                "pageId": "BaseDetails",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [
+                        {
+                            "name": "id"
+                        }
+                    ],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "64a1c91cedd3b9b22ecf75e0",
+                "id": "64a1c91cedd3b9b22ecf75e0",
+                "collectionId": "64a1c91cedd3b9b22ecf75de",
+                "confirmBeforeExecute": false,
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject2.myFun2",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "async () => {\n\t\t//use async-await or promises\n\t}"
+                ],
+                "pluginType": "JS"
+            }
+        ],
+        "applicationId": "jetsondashboard",
+        "pluginType": "JS",
+        "_id": "64a1c91cedd3b9b22ecf75de",
+        "pluginId": "JS",
+        "actionIds": [],
+        "archivedActionIds": [],
+        "archivedActions": []
+    }
+]
