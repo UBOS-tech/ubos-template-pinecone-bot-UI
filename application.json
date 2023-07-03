@@ -29,10 +29,6 @@
             "isDefault": false
         },
         {
-            "_id": "ResetPassword",
-            "isDefault": false
-        },
-        {
             "_id": "Info",
             "isDefault": false
         },
