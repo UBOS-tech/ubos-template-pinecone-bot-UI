@@ -9870,7 +9870,7 @@
                                                     }
                                                 ],
                                                 "borderRadius": "ROUNDED",
-                                                "onClick": "{{saveToPinecone3.run(() => (closeModal('Modal9'),getFAQ.run()), () => {})}}",
+                                                "onClick": "{{saveToPinecone4.run(() => (closeModal('Modal9'),getPDF.run()), () => {})}}",
                                                 "dynamicPropertyPathList": [
                                                     {
                                                         "key": "onClick"
