@@ -17901,7 +17901,7 @@
                         "snapColumns": 64,
                         "widgetId": "0",
                         "topRow": 0,
-                        "bottomRow": 840,
+                        "bottomRow": 960,
                         "parentRowSpace": 1,
                         "type": "CANVAS_WIDGET",
                         "detachFromLayout": true,
@@ -18150,7 +18150,7 @@
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "label": "Pipecone API key",
+                                                                                "label": "Pinecone API key",
                                                                                 "labelPosition": "Top",
                                                                                 "labelAlignment": "left",
                                                                                 "labelWidth": 5,
@@ -18234,7 +18234,7 @@
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "label": "Pipecone index",
+                                                                                "label": "Pinecone index",
                                                                                 "labelPosition": "Top",
                                                                                 "labelAlignment": "left",
                                                                                 "labelWidth": 5,
@@ -18297,9 +18297,9 @@
                                                                                 "parentColumnSpace": 8.1826171875,
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 1,
-                                                                                "rightColumn": 20,
-                                                                                "topRow": 49,
-                                                                                "bottomRow": 53,
+                                                                                "rightColumn": 21,
+                                                                                "topRow": 60,
+                                                                                "bottomRow": 64,
                                                                                 "parentId": "i9deeg6we5",
                                                                                 "dynamicBindingPathList": [],
                                                                                 "dynamicTriggerPathList": [
@@ -18473,6 +18473,47 @@
                                                                                         "key": "onClick"
                                                                                     }
                                                                                 ]
+                                                                            },
+                                                                            {
+                                                                                "isVisible": true,
+                                                                                "label": "Pinecone url",
+                                                                                "labelPosition": "Top",
+                                                                                "labelAlignment": "left",
+                                                                                "labelWidth": 5,
+                                                                                "widgetName": "Input_pineconeUrl",
+                                                                                "version": 2,
+                                                                                "defaultText": "{{getCredentials.data.pipecone_url}}",
+                                                                                "iconAlign": "left",
+                                                                                "autoFocus": false,
+                                                                                "labelStyle": "",
+                                                                                "resetOnSubmit": true,
+                                                                                "isRequired": false,
+                                                                                "isDisabled": false,
+                                                                                "animateLoading": true,
+                                                                                "classStyle": "",
+                                                                                "inputType": "TEXT",
+                                                                                "buttonPosition": "right",
+                                                                                "type": "INPUT_WIDGET_V2",
+                                                                                "hideCard": false,
+                                                                                "displayName": "Input",
+                                                                                "key": "bv8ife07f6",
+                                                                                "iconSVG": "/static/media/icon.9f505595.svg",
+                                                                                "widgetId": "oepdwhf9em",
+                                                                                "renderMode": "CANVAS",
+                                                                                "isLoading": false,
+                                                                                "parentColumnSpace": 7.7568359375,
+                                                                                "parentRowSpace": 10,
+                                                                                "leftColumn": 1,
+                                                                                "rightColumn": 53,
+                                                                                "topRow": 51,
+                                                                                "bottomRow": 58,
+                                                                                "parentId": "i9deeg6we5",
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "defaultText"
+                                                                                    }
+                                                                                ],
+                                                                                "dynamicTriggerPathList": []
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -18484,7 +18525,7 @@
                                                                         "leftColumn": 0,
                                                                         "rightColumn": 282.046875,
                                                                         "topRow": 0,
-                                                                        "bottomRow": 550,
+                                                                        "bottomRow": 660,
                                                                         "parentId": "q0izkcrej7"
                                                                     }
                                                                 ],
@@ -18504,7 +18545,7 @@
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
                                                                 "topRow": 11,
-                                                                "bottomRow": 68,
+                                                                "bottomRow": 77,
                                                                 "parentId": "c1xhey7cfr",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": []
@@ -18575,7 +18616,7 @@
                                                         "leftColumn": 0,
                                                         "rightColumn": null,
                                                         "topRow": 0,
-                                                        "bottomRow": 700,
+                                                        "bottomRow": 790,
                                                         "parentId": "k4ifwbiczh"
                                                     }
                                                 ],
@@ -18595,7 +18636,7 @@
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
                                                 "topRow": 0,
-                                                "bottomRow": 72,
+                                                "bottomRow": 80,
                                                 "parentId": "v0clg72g2l"
                                             }
                                         ],
@@ -18605,7 +18646,7 @@
                                         "leftColumn": 0,
                                         "rightColumn": null,
                                         "topRow": 0,
-                                        "bottomRow": 740,
+                                        "bottomRow": 820,
                                         "parentId": "2mld7p6uuy"
                                     }
                                 ],
@@ -18625,7 +18666,7 @@
                                 "leftColumn": 6,
                                 "rightColumn": 64,
                                 "topRow": 7,
-                                "bottomRow": 82,
+                                "bottomRow": 94,
                                 "parentId": "0",
                                 "dynamicBindingPathList": [],
                                 "dynamicTriggerPathList": []
@@ -18656,6 +18697,7 @@
                         "Text4",
                         "Text5",
                         "Text6",
+                        "Input_pineconeUrl",
                         "Text2",
                         "Divider1"
                     ],
