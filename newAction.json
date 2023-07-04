@@ -7401,7 +7401,7 @@
                         "value": true
                     }
                 ],
-                "body": "{\n\t\"bot_token\":\"{{bottoken.text}}\",\n\t\"bot_name\":\"{{botname.text}}\",\n\t\"openai_api\":\"{{openai.text}}\",\n\t\"pipecone_api\": \"{{pineconeapi.text}}\",\n\t\"pipecone_env\":\"{{env.text}}\",\n\t\"pipecone_index\": \"{{indexx.text}}\",\n\t\"private_chat\":{{chatid.text}},\n\t\"pipecone_url\": \"{{Input_pineconeUrl.text}}\",\n}"
+                "body": "{\n\t\"bot_token\": \"{{bottoken.text}}\",\n\t\"bot_name\": \"{{botname.text}}\",\n\t\"openai_api\": \"{{openai.text}}\",\n\t\"pipecone_api\": \"{{pineconeapi.text}}\",\n\t\"pipecone_env\": \"{{env.text}}\",\n\t\"pipecone_index\": \"{{indexx.text}}\",\n\t\"private_chat\": {{chatid.text}},\n\t\"pipecone_url\": \"{{Input_pineconeUrl.text}}\"\n}\n"
             },
             "dynamicBindingPathList": [
                 {
@@ -7422,13 +7422,14 @@
                 "env.text",
                 "indexx.text",
                 "chatid.text",
+                "JSON.stringify(Input_pineconeUrl.text)",
                 "Input_pineconeUrl.text"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-23T15:04:52.846Z",
-        "updatedAt": "2023-07-04T14:22:19.145Z",
+        "updatedAt": "2023-07-04T14:26:23.864Z",
         "deleted": false,
         "policies": [
             {
