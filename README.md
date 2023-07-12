@@ -55,7 +55,8 @@ File name:
 
 Each file must have a unique name.
 
-<img width="1920" alt="Знімок екрана 2023-07-03 о 16 26 16" src="https://github.com/UBOS-tech/ubos-template-pinecone-bot-UI/assets/89807001/1f69d210-2c80-428b-b918-bea2e19ecc92">
+
+![app3](https://github.com/UBOS-tech/ubos-template-pinecone-bot-NR/assets/89807001/16047420-c110-4440-8b9a-cf3b67fb7c95)
 
 
 3. To train your bot using the prepared knowledge base, follow these steps:
@@ -67,8 +68,8 @@ Each file must have a unique name.
 - Edit Content of Vectors: After saving in Pinecone, you can modify the content of vectors but cannot change the text division type.
 
 By training your bot with the knowledge base stored in Pinecone, it will be equipped to perform semantic searches and provide accurate responses.
+![app (1)](https://github.com/UBOS-tech/ubos-template-pinecone-bot-NR/assets/89807001/047f6389-0f38-4f18-bebc-dffeff682914)
 
-<img width="1912" alt="Знімок екрана 2023-07-03 о 16 28 04" src="https://github.com/UBOS-tech/ubos-template-pinecone-bot-UI/assets/89807001/ac5c433b-2928-40d8-b54f-ee67a10e53dc">
 
 
 ## Demo
