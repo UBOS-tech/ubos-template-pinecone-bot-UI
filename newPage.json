@@ -11178,7 +11178,7 @@
                                                                         "labelColor": "#FFFFFF",
                                                                         "iconName": "",
                                                                         "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Edit vectors'))}}",
-                                                                        "onClick": "{{navigateTo('Vectors',{'id': currentRow._id})}}"
+                                                                        "onClick": "{{navigateTo('Vectors',{'id': currentRow._id},'NEW_WINDOW')}}"
                                                                     }
                                                                 },
                                                                 "derivedColumns": {
@@ -11280,9 +11280,6 @@
                                                                 "dynamicPropertyPathList": [
                                                                     {
                                                                         "key": "primaryColumns.customColumn2.isDisabled"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.customColumn2.onClick"
                                                                     }
                                                                 ]
                                                             },
@@ -11775,7 +11772,7 @@
                                                                         "labelColor": "#FFFFFF",
                                                                         "iconName": "",
                                                                         "buttonLabel": "{{Table2.sanitizedTableData.map((currentRow) => ( 'Edit vectors'))}}",
-                                                                        "onClick": "{{navigateTo('Vectors',{'id': currentRow._id})}}"
+                                                                        "onClick": "{{navigateTo('Vectors',{'id': currentRow._id},'NEW_WINDOW')}}"
                                                                     }
                                                                 },
                                                                 "derivedColumns": {
@@ -11874,9 +11871,6 @@
                                                                 "dynamicPropertyPathList": [
                                                                     {
                                                                         "key": "primaryColumns.customColumn2.isDisabled"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.customColumn2.onClick"
                                                                     }
                                                                 ]
                                                             },
@@ -12904,7 +12898,7 @@
                                                                         "labelColor": "#FFFFFF",
                                                                         "iconName": "",
                                                                         "buttonLabel": "{{Table4.sanitizedTableData.map((currentRow) => ( 'Edit vectors'))}}",
-                                                                        "onClick": "{{navigateTo('Vectors',{'id': currentRow._id})}}"
+                                                                        "onClick": "{{navigateTo('Vectors',{'id': currentRow._id},'NEW_WINDOW')}}"
                                                                     }
                                                                 },
                                                                 "derivedColumns": {
@@ -13006,9 +13000,6 @@
                                                                 "dynamicPropertyPathList": [
                                                                     {
                                                                         "key": "primaryColumns.customColumn2.isDisabled"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.customColumn2.onClick"
                                                                     }
                                                                 ]
                                                             },
@@ -14549,7 +14540,7 @@
                         "children": [
                             {
                                 "width": 538,
-                                "height": 314,
+                                "height": 362,
                                 "canEscapeKeyClose": true,
                                 "animateLoading": true,
                                 "detachFromLayout": true,
@@ -14648,10 +14639,10 @@
                                                 "widgetId": "0p2p73ea7w",
                                                 "renderMode": "CANVAS",
                                                 "isLoading": false,
-                                                "leftColumn": 40,
-                                                "rightColumn": 52,
-                                                "topRow": 26,
-                                                "bottomRow": 30,
+                                                "leftColumn": 0,
+                                                "rightColumn": 17,
+                                                "topRow": 30,
+                                                "bottomRow": 34,
                                                 "parentId": "6vyn2fuzvn",
                                                 "onClick": "{{closeModal('Modal1')}}",
                                                 "borderRadius": "ROUNDED",
@@ -14661,7 +14652,7 @@
                                             {
                                                 "isVisible": true,
                                                 "animateLoading": true,
-                                                "text": "Confirm",
+                                                "text": "Update",
                                                 "buttonColor": "#3b82ff",
                                                 "buttonVariant": "PRIMARY",
                                                 "placement": "CENTER",
@@ -14680,10 +14671,10 @@
                                                 "widgetId": "ubdjbgx9nm",
                                                 "renderMode": "CANVAS",
                                                 "isLoading": false,
-                                                "leftColumn": 52,
+                                                "leftColumn": 47,
                                                 "rightColumn": 64,
-                                                "topRow": 26,
-                                                "bottomRow": 30,
+                                                "topRow": 30,
+                                                "bottomRow": 34,
                                                 "parentId": "6vyn2fuzvn",
                                                 "borderRadius": "ROUNDED",
                                                 "dynamicBindingPathList": [],
@@ -14692,7 +14683,7 @@
                                                         "key": "onClick"
                                                     }
                                                 ],
-                                                "onClick": "{{updateVectors.run(() => (getVectors.run(), closeModal(\"Modal1\")), () => {})}}",
+                                                "onClick": "{{getVectors.data[0].status === \"Saved in Pinecone\" ? updateVectors.run(() => (getVectors.run(), closeModal(\"Modal1\")), () => {}) : updateVectorsOnDB.run(() => (getVectors.run(), closeModal(\"Modal1\")), () => {})}}",
                                                 "dynamicPropertyPathList": [
                                                     {
                                                         "key": "onClick"
@@ -14772,7 +14763,7 @@
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
                                                 "topRow": 11,
-                                                "bottomRow": 26,
+                                                "bottomRow": 30,
                                                 "parentId": "6vyn2fuzvn",
                                                 "dynamicBindingPathList": [
                                                     {
@@ -14782,7 +14773,7 @@
                                                 "dynamicTriggerPathList": []
                                             }
                                         ],
-                                        "minHeight": 314,
+                                        "minHeight": 362,
                                         "widgetId": "6vyn2fuzvn",
                                         "renderMode": "CANVAS",
                                         "isLoading": false,
@@ -14791,7 +14782,7 @@
                                         "leftColumn": 0,
                                         "rightColumn": 0,
                                         "topRow": 0,
-                                        "bottomRow": 310,
+                                        "bottomRow": 360,
                                         "parentId": "xupgg77pwi"
                                     }
                                 ],
@@ -15030,7 +15021,7 @@
                                                             "bottomRow": true,
                                                             "parentId": true
                                                         },
-                                                        "onClick": "{{deleteVector_.run(() => getVectors.run(), () => {})}}"
+                                                        "onClick": "{{getVectors.data[0].status === \"Saved in Pinecone\" ?deleteVector_.run(() => getVectors.run(), () => {}) : deleteVectorDB.run(() => getVectors.run(), () => {})}}"
                                                     },
                                                     "IconButton2": {
                                                         "isVisible": true,
@@ -15401,7 +15392,12 @@
                                                                                         "key": "onClick"
                                                                                     }
                                                                                 ],
-                                                                                "onClick": "{{deleteVector_.run(() => getVectors.run(), () => {})}}"
+                                                                                "onClick": "{{getVectors.data[0].status === \"Saved in Pinecone\" ?deleteVector_.run(() => getVectors.run(), () => {}) : deleteVectorDB.run(() => getVectors.run(), () => {})}}",
+                                                                                "dynamicPropertyPathList": [
+                                                                                    {
+                                                                                        "key": "onClick"
+                                                                                    }
+                                                                                ]
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -15531,8 +15527,8 @@
                                                 "parentRowSpace": 10,
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
-                                                "topRow": 13,
-                                                "bottomRow": 83,
+                                                "topRow": 19,
+                                                "bottomRow": 79,
                                                 "parentId": "kh48ke7f4a",
                                                 "dynamicBindingPathList": [
                                                     {
@@ -15598,41 +15594,6 @@
                                             },
                                             {
                                                 "isVisible": true,
-                                                "text": "Vectors {{getVectors.data[0].name}}",
-                                                "fontSize": "HEADING2",
-                                                "fontStyle": "BOLD",
-                                                "textAlign": "LEFT",
-                                                "textColor": "#231F20",
-                                                "truncateButtonColor": "#FFC13D",
-                                                "widgetName": "Text6",
-                                                "shouldTruncate": false,
-                                                "overflow": "NONE",
-                                                "version": 1,
-                                                "animateLoading": true,
-                                                "type": "TEXT_WIDGET",
-                                                "hideCard": false,
-                                                "displayName": "Text",
-                                                "key": "1bwm0gxare",
-                                                "iconSVG": "/static/media/icon.97c59b52.svg",
-                                                "widgetId": "ub564iw89r",
-                                                "renderMode": "CANVAS",
-                                                "isLoading": false,
-                                                "parentColumnSpace": 13.6201171875,
-                                                "parentRowSpace": 10,
-                                                "leftColumn": 0,
-                                                "rightColumn": 21,
-                                                "topRow": 5,
-                                                "bottomRow": 9,
-                                                "parentId": "kh48ke7f4a",
-                                                "dynamicBindingPathList": [
-                                                    {
-                                                        "key": "text"
-                                                    }
-                                                ],
-                                                "dynamicTriggerPathList": []
-                                            },
-                                            {
-                                                "isVisible": true,
                                                 "widgetName": "Divider1",
                                                 "orientation": "horizontal",
                                                 "capType": "nc",
@@ -15655,8 +15616,8 @@
                                                 "parentRowSpace": 10,
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
-                                                "topRow": 9,
-                                                "bottomRow": 13,
+                                                "topRow": 15,
+                                                "bottomRow": 19,
                                                 "parentId": "kh48ke7f4a"
                                             },
                                             {
@@ -15683,9 +15644,9 @@
                                                 "parentColumnSpace": 12.658203125,
                                                 "parentRowSpace": 10,
                                                 "leftColumn": 0,
-                                                "rightColumn": 16,
-                                                "topRow": 1,
-                                                "bottomRow": 5,
+                                                "rightColumn": 14,
+                                                "topRow": 0,
+                                                "bottomRow": 4,
                                                 "parentId": "kh48ke7f4a",
                                                 "dynamicBindingPathList": [],
                                                 "dynamicTriggerPathList": [
@@ -15696,6 +15657,162 @@
                                                 "iconName": "arrow-left",
                                                 "iconAlign": "left",
                                                 "onClick": "{{navigateTo('BaseDetails',{\"_id\":getVectors.data[0].knowledgeBaseId })}}"
+                                            },
+                                            {
+                                                "isVisible": "{{getVectors.data[0].status !== 'Saved in Pinecone'}}",
+                                                "animateLoading": true,
+                                                "text": "Save to Pinecone",
+                                                "buttonColor": "#3b82ff",
+                                                "buttonVariant": "PRIMARY",
+                                                "placement": "CENTER",
+                                                "widgetName": "Button4",
+                                                "isDisabled": false,
+                                                "isDefaultClickDisabled": true,
+                                                "recaptchaType": "V3",
+                                                "version": 1,
+                                                "classStyle": "",
+                                                "type": "BUTTON_WIDGET",
+                                                "hideCard": false,
+                                                "displayName": "Button",
+                                                "key": "j3ipheuvgh",
+                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                "widgetId": "xys1ufth3s",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "parentColumnSpace": 12.431640625,
+                                                "parentRowSpace": 10,
+                                                "leftColumn": 48,
+                                                "rightColumn": 64,
+                                                "topRow": 5,
+                                                "bottomRow": 9,
+                                                "parentId": "kh48ke7f4a",
+                                                "dynamicBindingPathList": [
+                                                    {
+                                                        "key": "isVisible"
+                                                    }
+                                                ],
+                                                "dynamicTriggerPathList": [
+                                                    {
+                                                        "key": "onClick"
+                                                    }
+                                                ],
+                                                "borderRadius": "ROUNDED",
+                                                "dynamicPropertyPathList": [
+                                                    {
+                                                        "key": "isVisible"
+                                                    },
+                                                    {
+                                                        "key": "onClick"
+                                                    }
+                                                ],
+                                                "onClick": "{{saveToPinecone.run(() => (getVectors.run(), showAlert(saveToPinecone.data.payload, \"success\")), () => {})}}"
+                                            },
+                                            {
+                                                "isVisible": true,
+                                                "animateLoading": true,
+                                                "text": "Refresh",
+                                                "buttonColor": "#3b82ff",
+                                                "buttonVariant": "PRIMARY",
+                                                "placement": "CENTER",
+                                                "widgetName": "Button5",
+                                                "isDisabled": false,
+                                                "isDefaultClickDisabled": true,
+                                                "recaptchaType": "V3",
+                                                "version": 1,
+                                                "classStyle": "",
+                                                "type": "BUTTON_WIDGET",
+                                                "hideCard": false,
+                                                "displayName": "Button",
+                                                "key": "zo0vjkpzaa",
+                                                "iconSVG": "/static/media/icon.cca02633.svg",
+                                                "widgetId": "47z3zqbzkr",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "parentColumnSpace": 12.431640625,
+                                                "parentRowSpace": 10,
+                                                "leftColumn": 48,
+                                                "rightColumn": 64,
+                                                "topRow": 1,
+                                                "bottomRow": 5,
+                                                "parentId": "kh48ke7f4a",
+                                                "dynamicBindingPathList": [],
+                                                "dynamicTriggerPathList": [
+                                                    {
+                                                        "key": "onClick"
+                                                    }
+                                                ],
+                                                "borderRadius": "ROUNDED",
+                                                "onClick": "{{getVectors.run()}}"
+                                            },
+                                            {
+                                                "isVisible": true,
+                                                "text": "Sourse:  <span style=\"font-size:15px\"> {{getVectors.data[0].url}} </span>",
+                                                "fontSize": "PARAGRAPH",
+                                                "fontStyle": "BOLD",
+                                                "textAlign": "LEFT",
+                                                "textColor": "#231F20",
+                                                "truncateButtonColor": "#FFC13D",
+                                                "widgetName": "Text6",
+                                                "shouldTruncate": false,
+                                                "overflow": "NONE",
+                                                "version": 1,
+                                                "animateLoading": true,
+                                                "type": "TEXT_WIDGET",
+                                                "hideCard": false,
+                                                "displayName": "Text",
+                                                "key": "x057rgkibz",
+                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                "widgetId": "4h4wx38wqo",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "parentColumnSpace": 12.431640625,
+                                                "parentRowSpace": 10,
+                                                "leftColumn": 0,
+                                                "rightColumn": 46,
+                                                "topRow": 5,
+                                                "bottomRow": 10,
+                                                "parentId": "kh48ke7f4a",
+                                                "dynamicBindingPathList": [
+                                                    {
+                                                        "key": "text"
+                                                    }
+                                                ],
+                                                "dynamicTriggerPathList": []
+                                            },
+                                            {
+                                                "isVisible": true,
+                                                "text": "Status:  <span style=\"font-size:15px\"> {{getVectors.data[0].status}} </span>",
+                                                "fontSize": "PARAGRAPH",
+                                                "fontStyle": "BOLD",
+                                                "textAlign": "LEFT",
+                                                "textColor": "#231F20",
+                                                "truncateButtonColor": "#FFC13D",
+                                                "widgetName": "Text7",
+                                                "shouldTruncate": false,
+                                                "overflow": "NONE",
+                                                "version": 1,
+                                                "animateLoading": true,
+                                                "type": "TEXT_WIDGET",
+                                                "hideCard": false,
+                                                "displayName": "Text",
+                                                "key": "x057rgkibz",
+                                                "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                "widgetId": "47gouxwe8y",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "parentColumnSpace": 12.431640625,
+                                                "parentRowSpace": 10,
+                                                "leftColumn": 0,
+                                                "rightColumn": 46,
+                                                "topRow": 10,
+                                                "bottomRow": 15,
+                                                "parentId": "kh48ke7f4a",
+                                                "dynamicBindingPathList": [
+                                                    {
+                                                        "key": "text"
+                                                    }
+                                                ],
+                                                "dynamicTriggerPathList": []
                                             }
                                         ],
                                         "widgetId": "kh48ke7f4a",
@@ -15704,7 +15821,7 @@
                                         "leftColumn": 0,
                                         "rightColumn": null,
                                         "topRow": 0,
-                                        "bottomRow": 850,
+                                        "bottomRow": 810,
                                         "parentId": "z7juztrnon"
                                     }
                                 ],
@@ -15757,9 +15874,12 @@
                         "Text4",
                         "IconButton1",
                         "IconButton2",
-                        "Text6",
                         "Divider1",
-                        "Button3"
+                        "Button3",
+                        "Button4",
+                        "Button5",
+                        "Text6",
+                        "Text7"
                     ],
                     "deleted": false,
                     "policies": [],

@@ -8315,7 +8315,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-29T11:11:20.546Z",
-        "updatedAt": "2023-07-12T10:53:46.345Z",
+        "updatedAt": "2023-07-12T13:07:44.159Z",
         "deleted": false,
         "policies": [
             {
@@ -8399,7 +8399,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-29T11:38:38.762Z",
-        "updatedAt": "2023-07-12T10:11:50.746Z",
+        "updatedAt": "2023-07-12T12:58:30.083Z",
         "deleted": false,
         "policies": [
             {
@@ -8485,7 +8485,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-29T11:49:37.661Z",
-        "updatedAt": "2023-07-03T08:45:07.645Z",
+        "updatedAt": "2023-07-12T12:58:47.544Z",
         "deleted": false,
         "policies": [
             {
@@ -8691,7 +8691,7 @@
             "executeOnLoad": false,
             "pageId": "BaseDetails",
             "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
+                "timeoutInMillisecond": "30000",
                 "encodeParamsToggle": true,
                 "httpMethod": "POST",
                 "headers": [
@@ -8733,7 +8733,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-07-02T18:27:37.548Z",
-        "updatedAt": "2023-07-12T09:52:11.160Z",
+        "updatedAt": "2023-07-12T11:17:10.846Z",
         "deleted": false,
         "policies": [
             {
@@ -8945,5 +8945,331 @@
             "async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t\n\t}"
         ],
         "pluginType": "JS"
+    },
+    {
+        "name": "myFun1",
+        "pageId": "Vectors",
+        "executeOnLoad": false,
+        "actionConfiguration": {
+            "body": "() => {\n}",
+            "isAsync": false,
+            "timeoutInMillisecond": 10000,
+            "jsArguments": [],
+            "paginationType": "NONE",
+            "encodeParamsToggle": true
+        },
+        "clientSideExecution": true,
+        "_id": "64ae97d1edd3b9b22ecf75e6",
+        "id": "64ae97d1edd3b9b22ecf75e6",
+        "collectionId": "64ae97d1edd3b9b22ecf75e5",
+        "confirmBeforeExecute": false,
+        "applicationId": "jetsondashboard",
+        "datasource": {
+            "isValid": true,
+            "messages": [],
+            "name": "UNUSED_DATASOURCE",
+            "new": true,
+            "pluginId": "",
+            "userPermissions": []
+        },
+        "dynamicBindingPathList": [
+            {
+                "key": "body"
+            }
+        ],
+        "fullyQualifiedName": "JSObject1.myFun1",
+        "isValid": true,
+        "jsonPathKeys": [
+            "() => {\n\t\t//write code here\n\t}"
+        ],
+        "pluginType": "JS"
+    },
+    {
+        "name": "myFun2",
+        "pageId": "Vectors",
+        "executeOnLoad": false,
+        "actionConfiguration": {
+            "body": "async () => {\n\t\t//use async-await or promises\n\t}",
+            "isAsync": true,
+            "timeoutInMillisecond": 10000,
+            "jsArguments": [],
+            "paginationType": "NONE",
+            "encodeParamsToggle": true
+        },
+        "clientSideExecution": true,
+        "_id": "64ae97d1edd3b9b22ecf75e7",
+        "id": "64ae97d1edd3b9b22ecf75e7",
+        "collectionId": "64ae97d1edd3b9b22ecf75e5",
+        "confirmBeforeExecute": false,
+        "applicationId": "jetsondashboard",
+        "datasource": {
+            "isValid": true,
+            "messages": [],
+            "name": "UNUSED_DATASOURCE",
+            "new": true,
+            "pluginId": "",
+            "userPermissions": []
+        },
+        "dynamicBindingPathList": [
+            {
+                "key": "body"
+            }
+        ],
+        "fullyQualifiedName": "JSObject1.myFun2",
+        "isValid": true,
+        "jsonPathKeys": [
+            "async () => {\n\t\t//use async-await or promises\n\t}"
+        ],
+        "pluginType": "JS"
+    },
+    {
+        "_id": "64ae9d34edd3b9b22ecf75e8",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "saveToPinecone",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/saveToPinecone"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Vectors",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\t\"data\": {{JSON.stringify(getVectors.data[0].vectors)}},\n\t\"idBase\": \"{{getVectors.data[0]._id}}\"\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl",
+                "JSON.stringify(getVectors.data[0].vectors)",
+                "getVectors.data[0]._id"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-07-12T12:31:48.961Z",
+        "updatedAt": "2023-07-12T13:07:25.845Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "64ae9f6eedd3b9b22ecf75e9",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "updateVectorsOnDB",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/updateVectorOnDB"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Vectors",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "PUT",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\"question\": {{JSON.stringify(Input1.text)}},\n\"result\":{{JSON.stringify(Input2.text)}},\n\"url\": {{JSON.stringify(List1.selectedItem[0].url)}},\n\"_id \": \"{{main.URL.queryParams.id}}\",\n\"id\":\"{{List1.selectedItem[0]._id}}\"\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl",
+                "JSON.stringify(Input1.text)",
+                "JSON.stringify(Input2.text)",
+                "JSON.stringify(List1.selectedItem[0].url)",
+                "main.URL.queryParams.id",
+                "List1.selectedItem[0]._id"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-07-12T12:41:18.858Z",
+        "updatedAt": "2023-07-12T12:58:36.056Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "64aea330edd3b9b22ecf75ea",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "deleteVectorDB",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/deleteVectorDB"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Vectors",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "DELETE",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "text/plain"
+                    }
+                ],
+                "queryParameters": [
+                    {
+                        "key": "id",
+                        "value": "{{List1.selectedItem[0]._id}}"
+                    }
+                ],
+                "body": "",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "queryParameters[0].value"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl",
+                "List1.selectedItem[0]._id"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-07-12T12:57:20.645Z",
+        "updatedAt": "2023-07-12T12:58:52.353Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
     }
 ]

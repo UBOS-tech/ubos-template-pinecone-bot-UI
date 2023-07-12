@@ -278,5 +278,102 @@
         "actionIds": [],
         "archivedActionIds": [],
         "archivedActions": []
+    },
+    {
+        "id": "64ae97d1edd3b9b22ecf75e5",
+        "name": "JSObject1",
+        "pageId": "Vectors",
+        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+        "variables": [
+            {
+                "name": "myVar1",
+                "value": []
+            },
+            {
+                "name": "myVar2",
+                "value": {}
+            }
+        ],
+        "actions": [
+            {
+                "name": "myFun1",
+                "pageId": "Vectors",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "() => {\n}",
+                    "isAsync": false,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "64ae97d1edd3b9b22ecf75e6",
+                "id": "64ae97d1edd3b9b22ecf75e6",
+                "collectionId": "64ae97d1edd3b9b22ecf75e5",
+                "confirmBeforeExecute": false,
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.myFun1",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "() => {\n\t\t//write code here\n\t}"
+                ],
+                "pluginType": "JS"
+            },
+            {
+                "name": "myFun2",
+                "pageId": "Vectors",
+                "executeOnLoad": false,
+                "actionConfiguration": {
+                    "body": "async () => {\n\t\t//use async-await or promises\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "clientSideExecution": true,
+                "_id": "64ae97d1edd3b9b22ecf75e7",
+                "id": "64ae97d1edd3b9b22ecf75e7",
+                "collectionId": "64ae97d1edd3b9b22ecf75e5",
+                "confirmBeforeExecute": false,
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject1.myFun2",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "async () => {\n\t\t//use async-await or promises\n\t}"
+                ],
+                "pluginType": "JS"
+            }
+        ],
+        "applicationId": "jetsondashboard",
+        "pluginType": "JS",
+        "_id": "64ae97d1edd3b9b22ecf75e5"
     }
 ]
