@@ -246,7 +246,7 @@
         "id": "64a1c91cedd3b9b22ecf75de",
         "name": "JSObject2",
         "pageId": "BaseDetails",
-        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: async (id) => {\n await storeValue('idToDelete', id)\n await deleteVector.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\n\n\t},\n\tmyFun2: async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t}\n}",
+        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun2: async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t\n\t}\n}",
         "variables": [
             {
                 "name": "myVar1",
@@ -259,88 +259,16 @@
         ],
         "actions": [
             {
-                "name": "myFun1",
-                "pageId": "BaseDetails",
-                "executeOnLoad": false,
-                "actionConfiguration": {
-                    "body": "async (id) => {\n await storeValue('idToDelete', id)\n await deleteVector.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\n\n\t}",
-                    "isAsync": true,
-                    "timeoutInMillisecond": 10000,
-                    "jsArguments": [
-                        {
-                            "name": "id"
-                        }
-                    ],
-                    "paginationType": "NONE",
-                    "encodeParamsToggle": true
-                },
-                "clientSideExecution": true,
-                "_id": "64a1c91cedd3b9b22ecf75df",
-                "id": "64a1c91cedd3b9b22ecf75df",
-                "collectionId": "64a1c91cedd3b9b22ecf75de",
-                "confirmBeforeExecute": false,
-                "applicationId": "jetsondashboard",
-                "datasource": {
-                    "isValid": true,
-                    "messages": [],
-                    "name": "UNUSED_DATASOURCE",
-                    "new": true,
-                    "pluginId": "",
-                    "userPermissions": []
-                },
-                "dynamicBindingPathList": [
-                    {
-                        "key": "body"
-                    }
-                ],
-                "fullyQualifiedName": "JSObject2.myFun1",
-                "isValid": true,
-                "jsonPathKeys": [
-                    "() => {\n\t\t//write code here\n\t}"
-                ],
-                "pluginType": "JS"
-            },
-            {
                 "name": "myFun2",
-                "pageId": "BaseDetails",
-                "executeOnLoad": false,
-                "actionConfiguration": {
-                    "body": "async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t}",
-                    "isAsync": true,
-                    "timeoutInMillisecond": 10000,
-                    "jsArguments": [
-                        {
-                            "name": "id"
-                        }
-                    ],
-                    "paginationType": "NONE",
-                    "encodeParamsToggle": true
-                },
-                "clientSideExecution": true,
-                "_id": "64a1c91cedd3b9b22ecf75e0",
-                "id": "64a1c91cedd3b9b22ecf75e0",
                 "collectionId": "64a1c91cedd3b9b22ecf75de",
-                "confirmBeforeExecute": false,
-                "applicationId": "jetsondashboard",
-                "datasource": {
-                    "isValid": true,
-                    "messages": [],
-                    "name": "UNUSED_DATASOURCE",
-                    "new": true,
-                    "pluginId": "",
-                    "userPermissions": []
-                },
-                "dynamicBindingPathList": [
-                    {
-                        "key": "body"
-                    }
-                ],
-                "fullyQualifiedName": "JSObject2.myFun2",
-                "isValid": true,
-                "jsonPathKeys": [
-                    "async () => {\n\t\t//use async-await or promises\n\t}"
-                ],
-                "pluginType": "JS"
+                "executeOnLoad": false,
+                "pageId": "BaseDetails",
+                "actionConfiguration": {
+                    "body": "async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t\n\t}",
+                    "isAsync": true,
+                    "timeoutInMillisecond": 0,
+                    "jsArguments": []
+                }
             }
         ],
         "applicationId": "jetsondashboard",

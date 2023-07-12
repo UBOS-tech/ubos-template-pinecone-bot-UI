@@ -6970,7 +6970,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-05-31T11:37:27.119Z",
-        "updatedAt": "2023-07-03T10:49:26.057Z",
+        "updatedAt": "2023-07-10T09:23:14.346Z",
         "deleted": false,
         "policies": [
             {
@@ -7271,7 +7271,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-23T11:27:13.297Z",
-        "updatedAt": "2023-07-02T14:25:06.863Z",
+        "updatedAt": "2023-07-12T09:56:34.546Z",
         "deleted": false,
         "policies": [
             {
@@ -7613,86 +7613,6 @@
         ]
     },
     {
-        "_id": "64994af6edd3b9b22ecf75c1",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "saveToPinecone",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/saveToPinecone"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": false,
-            "pageId": "BaseDetails",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "POST",
-                "headers": [
-                    {
-                        "key": "content-type",
-                        "value": "application/json"
-                    }
-                ],
-                "queryParameters": [],
-                "body": "{\n\t\"data\": {{JSON.stringify(JSObject1.myFun1())}}\n}",
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ]
-            },
-            "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                },
-                {
-                    "key": "body"
-                }
-            ],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl",
-                "JSON.stringify(JSObject1.myFun1())"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2023-06-26T08:23:18.261Z",
-        "updatedAt": "2023-06-28T10:14:50.461Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
         "name": "myFun1",
         "pageId": "BaseDetails",
         "executeOnLoad": false,
@@ -7767,168 +7687,6 @@
             "async () => {\n\t\t//use async-await or promises\n\t}"
         ],
         "pluginType": "JS"
-    },
-    {
-        "_id": "6499583eedd3b9b22ecf75c5",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "uploadFile",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/updateObjectsBase"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": false,
-            "pageId": "BaseDetails",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "POST",
-                "headers": [
-                    {
-                        "key": "content-type",
-                        "value": "application/json"
-                    }
-                ],
-                "queryParameters": [],
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ],
-                "body": "{\n\"file\": {{JSON.stringify(FilePicker1.files)}},\n\t\"id\": \"{{main.URL.queryParams._id}}\",\n\t\"type\": \"File\"\n}"
-            },
-            "dynamicBindingPathList": [
-                {
-                    "key": "body"
-                },
-                {
-                    "key": "datasourceUrl"
-                }
-            ],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl",
-                "JSON.stringify(FilePicker1.files)",
-                "main.URL.queryParams._id"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2023-06-26T09:19:58.046Z",
-        "updatedAt": "2023-07-02T15:48:06.845Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
-        "_id": "649960ebedd3b9b22ecf75c6",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "uploadFAQ",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/updateObjectsBase"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": false,
-            "pageId": "BaseDetails",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "POST",
-                "headers": [
-                    {
-                        "key": "content-type",
-                        "value": "application/json"
-                    }
-                ],
-                "queryParameters": [],
-                "body": "{\n\t\"file\": {{JSON.stringify(FilePicker2.files)}},\n\t\"id\": \"{{main.URL.queryParams._id}}\",\n\t\"type\": \"FQA\"\n}",
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "application/json"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ]
-            },
-            "dynamicBindingPathList": [
-                {
-                    "key": "body"
-                },
-                {
-                    "key": "datasourceUrl"
-                }
-            ],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl",
-                "JSON.stringify(FilePicker2.files)",
-                "main.URL.queryParams._id"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2023-06-26T09:56:59.944Z",
-        "updatedAt": "2023-07-02T14:55:17.445Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
     },
     {
         "_id": "6499696cedd3b9b22ecf75c7",
@@ -8070,7 +7828,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-26T12:11:48.959Z",
-        "updatedAt": "2023-06-29T11:14:39.861Z",
+        "updatedAt": "2023-07-12T10:07:53.446Z",
         "deleted": false,
         "policies": [
             {
@@ -8170,160 +7928,6 @@
         ]
     },
     {
-        "_id": "649985d3edd3b9b22ecf75cb",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "saveToPinecone2",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/saveToPinecone"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": false,
-            "pageId": "BaseDetails",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "POST",
-                "headers": [
-                    {
-                        "key": "content-type",
-                        "value": "application/json"
-                    }
-                ],
-                "queryParameters": [],
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ],
-                "body": "{\n\t\"data\": {{JSON.stringify(JSObject1.myFun2())}}\n}"
-            },
-            "dynamicBindingPathList": [
-                {
-                    "key": "body"
-                }
-            ],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl",
-                "JSON.stringify(JSObject1.myFun2())"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2023-06-26T12:34:27.652Z",
-        "updatedAt": "2023-07-02T18:48:21.849Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
-        "_id": "6499874fedd3b9b22ecf75cd",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "saveToPinecone3",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/saveToPinecone"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": false,
-            "pageId": "BaseDetails",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "POST",
-                "headers": [
-                    {
-                        "key": "content-type",
-                        "value": "application/json"
-                    }
-                ],
-                "queryParameters": [],
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ],
-                "body": "{\n\t\"data\": {{JSON.stringify(JSObject1.myFun3())}}\n}"
-            },
-            "dynamicBindingPathList": [
-                {
-                    "key": "body"
-                }
-            ],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl",
-                "JSON.stringify(JSObject1.myFun3())"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2023-06-26T12:40:47.246Z",
-        "updatedAt": "2023-07-03T08:23:05.244Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
         "_id": "649995ebedd3b9b22ecf75ce",
         "applicationId": "jetsondashboard",
         "organizationId": "Org",
@@ -8382,7 +7986,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-26T13:43:07.045Z",
-        "updatedAt": "2023-06-26T13:43:51.852Z",
+        "updatedAt": "2023-07-12T10:04:22.253Z",
         "deleted": false,
         "policies": [
             {
@@ -8631,79 +8235,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-27T08:34:14.761Z",
-        "updatedAt": "2023-07-02T18:54:02.347Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
-        "_id": "649d6060edd3b9b22ecf75d2",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "updateVectors",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": false,
-            "pageId": "BaseDetails",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "PUT",
-                "headers": [
-                    {
-                        "key": "content-type",
-                        "value": "application/json"
-                    }
-                ],
-                "queryParameters": [],
-                "body": "{\n\t\n}",
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ]
-            },
-            "dynamicBindingPathList": [],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2023-06-29T10:43:44.669Z",
-        "updatedAt": "2023-06-29T10:44:10.747Z",
+        "updatedAt": "2023-07-12T10:07:41.965Z",
         "deleted": false,
         "policies": [
             {
@@ -8783,7 +8315,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-29T11:11:20.546Z",
-        "updatedAt": "2023-07-03T08:45:08.251Z",
+        "updatedAt": "2023-07-12T10:53:46.345Z",
         "deleted": false,
         "policies": [
             {
@@ -8867,7 +8399,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-29T11:38:38.762Z",
-        "updatedAt": "2023-06-29T12:22:56.759Z",
+        "updatedAt": "2023-07-12T10:11:50.746Z",
         "deleted": false,
         "policies": [
             {
@@ -9118,7 +8650,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-07-02T15:08:59.260Z",
-        "updatedAt": "2023-07-02T18:49:42.047Z",
+        "updatedAt": "2023-07-12T10:07:53.255Z",
         "deleted": false,
         "policies": [
             {
@@ -9201,7 +8733,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-07-02T18:27:37.548Z",
-        "updatedAt": "2023-07-02T18:54:09.559Z",
+        "updatedAt": "2023-07-12T09:52:11.160Z",
         "deleted": false,
         "policies": [
             {
@@ -9256,252 +8788,6 @@
             "() => {\n\tlet result = List2.items.map((e)=> {\n\t\treturn {\n\t\t\tquestion: e.Input1Copy.text,\n\t\t\tresult: e.Input2Copy.text,\n\t\t\tid: e.Input5.text,\n\t\t\turl: Table2.selectedRow.name,\n\t\t\tpinecone: Checkbox1Copy.isChecked,\n\t\t\tidBase: Table2.selectedRow._id,\n\t\t}\n\t})\nreturn result\t\t\n\t}"
         ],
         "pluginType": "JS"
-    },
-    {
-        "_id": "64a1c659edd3b9b22ecf75dd",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "saveToPinecone4",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/saveToPinecone"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": false,
-            "pageId": "BaseDetails",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "POST",
-                "headers": [
-                    {
-                        "key": "content-type",
-                        "value": "application/json"
-                    }
-                ],
-                "queryParameters": [],
-                "body": "{\n\t\"data\": {{JSON.stringify(JSObject1.myFun4())}}\n}",
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ]
-            },
-            "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                }
-            ],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl",
-                "JSON.stringify(JSObject1.myFun4())"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2023-07-02T18:47:53.953Z",
-        "updatedAt": "2023-07-02T18:56:12.747Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
-        "name": "myFun1",
-        "pageId": "BaseDetails",
-        "executeOnLoad": false,
-        "actionConfiguration": {
-            "body": "async (id) => {\n await storeValue('idToDelete', id)\n await deleteVector.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\n\n\t}",
-            "isAsync": true,
-            "timeoutInMillisecond": 10000,
-            "jsArguments": [
-                {
-                    "name": "id"
-                }
-            ],
-            "paginationType": "NONE",
-            "encodeParamsToggle": true
-        },
-        "clientSideExecution": true,
-        "_id": "64a1c91cedd3b9b22ecf75df",
-        "id": "64a1c91cedd3b9b22ecf75df",
-        "collectionId": "64a1c91cedd3b9b22ecf75de",
-        "confirmBeforeExecute": false,
-        "applicationId": "jetsondashboard",
-        "datasource": {
-            "isValid": true,
-            "messages": [],
-            "name": "UNUSED_DATASOURCE",
-            "new": true,
-            "pluginId": "",
-            "userPermissions": []
-        },
-        "dynamicBindingPathList": [
-            {
-                "key": "body"
-            }
-        ],
-        "fullyQualifiedName": "JSObject2.myFun1",
-        "isValid": true,
-        "jsonPathKeys": [
-            "() => {\n\t\t//write code here\n\t}"
-        ],
-        "pluginType": "JS"
-    },
-    {
-        "name": "myFun2",
-        "pageId": "BaseDetails",
-        "executeOnLoad": false,
-        "actionConfiguration": {
-            "body": "async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t}",
-            "isAsync": true,
-            "timeoutInMillisecond": 10000,
-            "jsArguments": [
-                {
-                    "name": "id"
-                }
-            ],
-            "paginationType": "NONE",
-            "encodeParamsToggle": true
-        },
-        "clientSideExecution": true,
-        "_id": "64a1c91cedd3b9b22ecf75e0",
-        "id": "64a1c91cedd3b9b22ecf75e0",
-        "collectionId": "64a1c91cedd3b9b22ecf75de",
-        "confirmBeforeExecute": false,
-        "applicationId": "jetsondashboard",
-        "datasource": {
-            "isValid": true,
-            "messages": [],
-            "name": "UNUSED_DATASOURCE",
-            "new": true,
-            "pluginId": "",
-            "userPermissions": []
-        },
-        "dynamicBindingPathList": [
-            {
-                "key": "body"
-            }
-        ],
-        "fullyQualifiedName": "JSObject2.myFun2",
-        "isValid": true,
-        "jsonPathKeys": [
-            "async () => {\n\t\t//use async-await or promises\n\t}"
-        ],
-        "pluginType": "JS"
-    },
-    {
-        "_id": "64a1c9aeedd3b9b22ecf75e1",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "deleteVector",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/deleteVectorDB"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": false,
-            "pageId": "BaseDetails",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "DELETE",
-                "headers": [
-                    {
-                        "key": "content-type",
-                        "value": "text/plain"
-                    }
-                ],
-                "queryParameters": [
-                    {
-                        "key": "id",
-                        "value": "{{main.store.idToDelete}}"
-                    }
-                ],
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ],
-                "body": ""
-            },
-            "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                },
-                {
-                    "key": "queryParameters[0].value"
-                }
-            ],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl",
-                "main.store.idToDelete"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2023-07-02T19:02:06.046Z",
-        "updatedAt": "2023-07-02T19:15:44.753Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
     },
     {
         "_id": "64a1cdb2edd3b9b22ecf75e2",
@@ -9568,7 +8854,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-07-02T19:19:14.150Z",
-        "updatedAt": "2023-07-02T19:30:54.444Z",
+        "updatedAt": "2023-07-12T10:08:55.862Z",
         "deleted": false,
         "policies": [
             {
@@ -9621,6 +8907,42 @@
         "isValid": true,
         "jsonPathKeys": [
             "() => {\n\tlet result = List2.items.map((e)=> {\n\t\treturn {\n\t\t\tquestion: e.Input1Copy.text,\n\t\t\tresult: e.Input2Copy.text,\n\t\t\tid: e.Input5.text,\n\t\t\turl: Table2.selectedRow.name,\n\t\t\tpinecone: Checkbox1Copy.isChecked,\n\t\t\tidBase: Table2.selectedRow._id,\n\t\t}\n\t})\nreturn result\t\t\n\t}"
+        ],
+        "pluginType": "JS"
+    },
+    {
+        "name": "myFun2",
+        "collectionId": "64a1c91cedd3b9b22ecf75de",
+        "executeOnLoad": false,
+        "pageId": "BaseDetails",
+        "actionConfiguration": {
+            "body": "async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t\n\t}",
+            "isAsync": true,
+            "timeoutInMillisecond": 10000,
+            "jsArguments": [],
+            "paginationType": "NONE",
+            "encodeParamsToggle": true
+        },
+        "_id": "64ae7bf3edd3b9b22ecf75e4",
+        "id": "64ae7bf3edd3b9b22ecf75e4",
+        "applicationId": "jetsondashboard",
+        "datasource": {
+            "isValid": true,
+            "messages": [],
+            "name": "UNUSED_DATASOURCE",
+            "new": true,
+            "pluginId": "",
+            "userPermissions": []
+        },
+        "dynamicBindingPathList": [
+            {
+                "key": "body"
+            }
+        ],
+        "fullyQualifiedName": "JSObject2.myFun2",
+        "isValid": true,
+        "jsonPathKeys": [
+            "async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t\n\t}"
         ],
         "pluginType": "JS"
     }
