@@ -7341,7 +7341,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-23T15:03:56.857Z",
-        "updatedAt": "2023-08-02T17:18:43.646Z",
+        "updatedAt": "2023-08-04T05:59:50.060Z",
         "deleted": false,
         "policies": [
             {
@@ -9370,7 +9370,7 @@
                 "pluginId": "API",
                 "messages": []
             },
-            "executeOnLoad": false,
+            "executeOnLoad": true,
             "pageId": "App settings",
             "actionConfiguration": {
                 "timeoutInMillisecond": 10000,
@@ -9402,7 +9402,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-08-03T11:14:42.360Z",
-        "updatedAt": "2023-08-03T11:41:29.965Z",
+        "updatedAt": "2023-08-04T06:02:46.044Z",
         "deleted": false,
         "policies": [
             {
@@ -9602,7 +9602,7 @@
                 "pluginId": "API",
                 "messages": []
             },
-            "executeOnLoad": false,
+            "executeOnLoad": true,
             "pageId": "App settings",
             "actionConfiguration": {
                 "timeoutInMillisecond": 10000,
@@ -9634,7 +9634,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-08-03T11:41:54.151Z",
-        "updatedAt": "2023-08-03T11:46:18.653Z",
+        "updatedAt": "2023-08-04T06:02:17.648Z",
         "deleted": false,
         "policies": [
             {
@@ -9704,7 +9704,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-08-03T11:46:26.858Z",
-        "updatedAt": "2023-08-03T11:46:45.547Z",
+        "updatedAt": "2023-08-04T06:01:04.153Z",
         "deleted": false,
         "policies": [
             {

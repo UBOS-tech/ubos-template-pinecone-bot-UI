@@ -15794,6 +15794,39 @@
                                     "main.env.nodeUrl"
                                 ],
                                 "timeoutInMillisecond": 10000
+                            },
+                            {
+                                "_id": "64cb9282edd3b9b22ecf75ef",
+                                "id": "64cb9282edd3b9b22ecf75ef",
+                                "confirmBeforeExecute": false,
+                                "name": "getCredentialsWhatsApp",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
+                                "timeoutInMillisecond": 10000
+                            },
+                            {
+                                "_id": "64cb8c22edd3b9b22ecf75ec",
+                                "id": "64cb8c22edd3b9b22ecf75ec",
+                                "confirmBeforeExecute": false,
+                                "name": "getCredentialsTelegram",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
+                                "timeoutInMillisecond": 10000
+                            },
+                            {
+                                "_id": "64cb9392edd3b9b22ecf75f0",
+                                "id": "64cb9392edd3b9b22ecf75f0",
+                                "confirmBeforeExecute": false,
+                                "name": "getCredentialsMeta",
+                                "pluginType": "API",
+                                "jsonPathKeys": [
+                                    "main.env.nodeUrl"
+                                ],
+                                "timeoutInMillisecond": 10000
                             }
                         ]
                     ],
@@ -17032,7 +17065,7 @@
                                                 "onClick": "{{navigateTo('BaseDetails',{\"_id\":getVectors.data[0].knowledgeBaseId })}}"
                                             },
                                             {
-                                                "isVisible": "{{getVectors.data[0].status !== 'Saved in Pinecone'}}",
+                                                "isVisible": "{{getVectors.data[0].status === 'Divided'}}",
                                                 "animateLoading": true,
                                                 "text": "Save to Pinecone",
                                                 "buttonColor": "#3b82ff",
