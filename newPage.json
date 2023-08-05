@@ -4838,7 +4838,7 @@
                                                                                                 "backgroundColor": ""
                                                                                             },
                                                                                             {
-                                                                                                "isVisible": true,
+                                                                                                "isVisible": false,
                                                                                                 "animateLoading": true,
                                                                                                 "text": "𝗦𝗶𝗴𝗻 𝘂𝗽",
                                                                                                 "buttonColor": "#2E3D49",
@@ -16993,7 +16993,7 @@
                                             },
                                             {
                                                 "isVisible": true,
-                                                "text": "Sourse:  <span style=\"font-size:15px\"> {{getVectors.data[0].url}} </span>",
+                                                "text": "Sourse:  <span style=\"font-size:15px\"> {{getVectors.data[0].name}} </span>",
                                                 "fontSize": "PARAGRAPH",
                                                 "fontStyle": "BOLD",
                                                 "textAlign": "LEFT",
