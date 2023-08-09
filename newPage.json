@@ -35,7 +35,7 @@
                         "snapColumns": 64,
                         "widgetId": "0",
                         "topRow": 0,
-                        "bottomRow": 1390,
+                        "bottomRow": 920,
                         "parentRowSpace": 1,
                         "type": "CANVAS_WIDGET",
                         "detachFromLayout": true,
@@ -289,7 +289,7 @@
                                 "containerStyle": "card",
                                 "borderColor": "transparent",
                                 "borderWidth": "0",
-                                "borderRadius": "10",
+                                "borderRadius": "0",
                                 "boxShadow": "NONE",
                                 "animateLoading": true,
                                 "children": [
@@ -432,7 +432,7 @@
                                                         "textSize": "PARAGRAPH",
                                                         "enableFilter": true,
                                                         "enableSort": true,
-                                                        "isVisible": true,
+                                                        "isVisible": false,
                                                         "isDisabled": false,
                                                         "isCellVisible": true,
                                                         "isDerived": false,
@@ -659,14 +659,16 @@
                                                     "task": 245,
                                                     "step": 62,
                                                     "status": 75,
-                                                    "email": 392,
+                                                    "email": 165,
                                                     "roles": 244,
-                                                    "createdAt": 229,
-                                                    "firstname": 241,
-                                                    "lastname": 234,
-                                                    "role_items": 2400
+                                                    "createdAt": 139,
+                                                    "firstname": 127,
+                                                    "lastname": 115,
+                                                    "role_items": 2400,
+                                                    "active": 94
                                                 },
                                                 "columnOrder": [
+                                                    "email",
                                                     "_id",
                                                     "deleted",
                                                     "avatarColor",
@@ -675,7 +677,6 @@
                                                     "active",
                                                     "firstname",
                                                     "lastname",
-                                                    "email",
                                                     "password",
                                                     "verifyToken",
                                                     "resetPassToken",
@@ -704,7 +705,7 @@
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
                                                 "topRow": 6,
-                                                "bottomRow": 126,
+                                                "bottomRow": 63,
                                                 "parentId": "h1kagy1itu",
                                                 "dynamicTriggerPathList": [],
                                                 "dynamicPropertyPathList": []
@@ -836,12 +837,12 @@
                                         "leftColumn": 0,
                                         "rightColumn": 457.125,
                                         "topRow": 0,
-                                        "bottomRow": 1280,
+                                        "bottomRow": 650,
                                         "parentId": "bnftm1hu63"
                                     }
                                 ],
                                 "version": 1,
-                                "classStyle": "",
+                                "classStyle": "scroll_section",
                                 "type": "CONTAINER_WIDGET",
                                 "hideCard": false,
                                 "displayName": "Container",
@@ -855,11 +856,12 @@
                                 "parentRowSpace": 10,
                                 "leftColumn": 6,
                                 "rightColumn": 64,
-                                "topRow": 8,
-                                "bottomRow": 137,
+                                "topRow": 7,
+                                "bottomRow": 72,
                                 "parentId": "0",
                                 "dynamicBindingPathList": [],
-                                "dynamicTriggerPathList": []
+                                "dynamicTriggerPathList": [],
+                                "shouldScrollContents": true
                             },
                             {
                                 "width": 1146,
@@ -2330,7 +2332,7 @@
                         "snapColumns": 64,
                         "widgetId": "0",
                         "topRow": 0,
-                        "bottomRow": 1390,
+                        "bottomRow": 1380,
                         "parentRowSpace": 1,
                         "type": "CANVAS_WIDGET",
                         "detachFromLayout": true,
@@ -3000,7 +3002,7 @@
                                 "containerStyle": "card",
                                 "borderColor": "transparent",
                                 "borderWidth": "0",
-                                "borderRadius": "10",
+                                "borderRadius": "",
                                 "boxShadow": "NONE",
                                 "animateLoading": true,
                                 "children": [
@@ -3203,6 +3205,9 @@
                                                     },
                                                     {
                                                         "key": "primaryColumns.icon.computedValue"
+                                                    },
+                                                    {
+                                                        "key": "primaryColumns.childModules.computedValue"
                                                     }
                                                 ],
                                                 "primaryColumns": {
@@ -3307,6 +3312,23 @@
                                                         "isDerived": false,
                                                         "label": "icon",
                                                         "computedValue": "{{TableParent.sanitizedTableData.map((currentRow) => ( currentRow.icon))}}"
+                                                    },
+                                                    "childModules": {
+                                                        "index": 6,
+                                                        "width": 150,
+                                                        "id": "childModules",
+                                                        "horizontalAlignment": "LEFT",
+                                                        "verticalAlignment": "CENTER",
+                                                        "columnType": "text",
+                                                        "textSize": "PARAGRAPH",
+                                                        "enableFilter": true,
+                                                        "enableSort": true,
+                                                        "isVisible": true,
+                                                        "isDisabled": false,
+                                                        "isCellVisible": true,
+                                                        "isDerived": false,
+                                                        "label": "childModules",
+                                                        "computedValue": "{{TableParent.sanitizedTableData.map((currentRow) => ( currentRow.childModules))}}"
                                                     }
                                                 },
                                                 "derivedColumns": {},
@@ -3322,7 +3344,8 @@
                                                     "position",
                                                     "icon",
                                                     "deleted",
-                                                    "isParent"
+                                                    "isParent",
+                                                    "childModules"
                                                 ],
                                                 "enableClientSideSearch": true,
                                                 "isVisibleSearch": true,
@@ -3632,7 +3655,7 @@
                                     }
                                 ],
                                 "version": 1,
-                                "classStyle": "",
+                                "classStyle": "scroll_section",
                                 "type": "CONTAINER_WIDGET",
                                 "hideCard": false,
                                 "displayName": "Container",
@@ -3646,11 +3669,12 @@
                                 "parentRowSpace": 10,
                                 "leftColumn": 6,
                                 "rightColumn": 64,
-                                "topRow": 8,
-                                "bottomRow": 137,
+                                "topRow": 7,
+                                "bottomRow": 136,
                                 "parentId": "0",
                                 "dynamicBindingPathList": [],
-                                "dynamicTriggerPathList": []
+                                "dynamicTriggerPathList": [],
+                                "shouldScrollContents": true
                             },
                             {
                                 "width": 690,
@@ -4519,7 +4543,7 @@
                                         "label": "setting",
                                         "id": "tab2",
                                         "widgetId": "vv8ufepqz8",
-                                        "isVisible": true,
+                                        "isVisible": "{{getData.data.length===0}}",
                                         "index": 1
                                     }
                                 },
@@ -4660,12 +4684,8 @@
                                                                                         "key": "onClick"
                                                                                     }
                                                                                 ],
-                                                                                "onClick": "{{login.run(() => navigateTo('User Management', {}), () => {})}}",
-                                                                                "dynamicPropertyPathList": [
-                                                                                    {
-                                                                                        "key": "onClick"
-                                                                                    }
-                                                                                ],
+                                                                                "onClick": "{{login.run(() => navigateTo('App settings', {}), () => {})}}",
+                                                                                "dynamicPropertyPathList": [],
                                                                                 "borderRadius": "ROUNDED",
                                                                                 "iconName": "log-in",
                                                                                 "iconAlign": "left",
@@ -4998,7 +5018,7 @@
                                                                 "isVisible": true,
                                                                 "animateLoading": true,
                                                                 "text": "Set up application!",
-                                                                "buttonColor": "#3b82ff",
+                                                                "buttonColor": "#3268a8",
                                                                 "buttonVariant": "PRIMARY",
                                                                 "placement": "CENTER",
                                                                 "widgetName": "Button1",
@@ -5205,8 +5225,8 @@
                                                                 "isLoading": false,
                                                                 "parentColumnSpace": 9.09375,
                                                                 "parentRowSpace": 10,
-                                                                "leftColumn": 25,
-                                                                "rightColumn": 41,
+                                                                "leftColumn": 24,
+                                                                "rightColumn": 40,
                                                                 "topRow": 39,
                                                                 "bottomRow": 43,
                                                                 "parentId": "ux8gda7g29",
@@ -5282,10 +5302,18 @@
                                 "dynamicBindingPathList": [
                                     {
                                         "key": "defaultTab"
+                                    },
+                                    {
+                                        "key": "tabsObj.tab2.isVisible"
                                     }
                                 ],
                                 "dynamicTriggerPathList": [],
-                                "classStyle": "frame_section tab_login"
+                                "classStyle": "frame_section tab_login",
+                                "dynamicPropertyPathList": [
+                                    {
+                                        "key": "tabsObj.tab2.isVisible"
+                                    }
+                                ]
                             }
                         ],
                         "snapRows": 92,
@@ -5744,7 +5772,7 @@
                         "snapColumns": 64,
                         "widgetId": "0",
                         "topRow": 0,
-                        "bottomRow": 1130,
+                        "bottomRow": 920,
                         "parentRowSpace": 1,
                         "type": "CANVAS_WIDGET",
                         "detachFromLayout": true,
@@ -6045,7 +6073,7 @@
                                 "containerStyle": "card",
                                 "borderColor": "transparent",
                                 "borderWidth": "0",
-                                "borderRadius": "10",
+                                "borderRadius": "0",
                                 "boxShadow": "NONE",
                                 "animateLoading": true,
                                 "children": [
@@ -6216,7 +6244,7 @@
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
                                                 "topRow": 7,
-                                                "bottomRow": 96,
+                                                "bottomRow": 60,
                                                 "parentId": "5goubwl3lo",
                                                 "dynamicTriggerPathList": [],
                                                 "dynamicPropertyPathList": []
@@ -6399,12 +6427,12 @@
                                         "leftColumn": 0,
                                         "rightColumn": 457.125,
                                         "topRow": 0,
-                                        "bottomRow": 980,
+                                        "bottomRow": 620,
                                         "parentId": "yn7umq3s1t"
                                     }
                                 ],
                                 "version": 1,
-                                "classStyle": "",
+                                "classStyle": "scroll_section",
                                 "type": "CONTAINER_WIDGET",
                                 "hideCard": false,
                                 "displayName": "Container",
@@ -6419,10 +6447,11 @@
                                 "leftColumn": 6,
                                 "rightColumn": 64,
                                 "topRow": 8,
-                                "bottomRow": 111,
+                                "bottomRow": 72,
                                 "parentId": "0",
                                 "dynamicBindingPathList": [],
-                                "dynamicTriggerPathList": []
+                                "dynamicTriggerPathList": [],
+                                "shouldScrollContents": true
                             },
                             {
                                 "width": 724,
@@ -17543,360 +17572,6 @@
         },
         "createdAt": "2023-06-29T10:49:35.189Z",
         "updatedAt": "2023-06-29T10:49:35.189Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:pages",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:pages",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
-        "_id": "64d28333edd3b9b22ecf75f1",
-        "applicationId": "jetsondashboard",
-        "slug": "Page1",
-        "Page": {
-            "name": "Page1",
-            "layouts": [
-                {
-                    "_id": "64d28333edd3b9b22ecf75f2",
-                    "viewMode": false,
-                    "dsl": {
-                        "widgetName": "MainContainer",
-                        "backgroundColor": "none",
-                        "rightColumn": 1224,
-                        "snapColumns": 64,
-                        "widgetId": "0",
-                        "topRow": 0,
-                        "bottomRow": 680,
-                        "parentRowSpace": 1,
-                        "type": "CANVAS_WIDGET",
-                        "detachFromLayout": true,
-                        "minHeight": 600,
-                        "dynamicBindingPathList": [],
-                        "parentColumnSpace": 1,
-                        "leftColumn": 0,
-                        "children": [
-                            {
-                                "isVisible": true,
-                                "backgroundColor": "",
-                                "widgetName": "Container3",
-                                "containerStyle": "card",
-                                "borderColor": "transparent",
-                                "borderWidth": "0",
-                                "borderRadius": "0",
-                                "boxShadow": "NONE",
-                                "animateLoading": true,
-                                "children": [
-                                    {
-                                        "isVisible": true,
-                                        "widgetName": "Canvas16",
-                                        "version": 1,
-                                        "detachFromLayout": true,
-                                        "type": "CANVAS_WIDGET",
-                                        "hideCard": true,
-                                        "displayName": "Canvas",
-                                        "key": "y8z6zd8zzm",
-                                        "containerStyle": "none",
-                                        "canExtend": false,
-                                        "children": [
-                                            {
-                                                "isVisible": true,
-                                                "text": "Welcome to our app! <br/><span style=\"font-size:20px\">Please press the button below to access all settings and customize your experience.</span>",
-                                                "fontSize": "HEADING1",
-                                                "fontStyle": "BOLD",
-                                                "textAlign": "CENTER",
-                                                "textColor": "#231F20",
-                                                "truncateButtonColor": "#FFC13D",
-                                                "widgetName": "Text1",
-                                                "shouldTruncate": false,
-                                                "overflow": "NONE",
-                                                "version": 1,
-                                                "animateLoading": true,
-                                                "type": "TEXT_WIDGET",
-                                                "hideCard": false,
-                                                "displayName": "Text",
-                                                "key": "wcilyg6x1g",
-                                                "iconSVG": "/static/media/icon.97c59b52.svg",
-                                                "widgetId": "skzh36qumc",
-                                                "renderMode": "CANVAS",
-                                                "isLoading": false,
-                                                "parentColumnSpace": 13,
-                                                "parentRowSpace": 10,
-                                                "leftColumn": 0,
-                                                "rightColumn": 64,
-                                                "topRow": 0,
-                                                "bottomRow": 10,
-                                                "parentId": "1ipcbax9uy",
-                                                "dynamicBindingPathList": [],
-                                                "dynamicTriggerPathList": []
-                                            },
-                                            {
-                                                "isVisible": true,
-                                                "animateLoading": true,
-                                                "text": "Set up application!",
-                                                "buttonColor": "#3b82ff",
-                                                "buttonVariant": "PRIMARY",
-                                                "placement": "CENTER",
-                                                "widgetName": "Button1",
-                                                "isDisabled": false,
-                                                "isDefaultClickDisabled": true,
-                                                "recaptchaType": "V3",
-                                                "version": 1,
-                                                "classStyle": "",
-                                                "type": "BUTTON_WIDGET",
-                                                "hideCard": false,
-                                                "displayName": "Button",
-                                                "key": "xso692ur8n",
-                                                "iconSVG": "/static/media/icon.cca02633.svg",
-                                                "widgetId": "emy3xacav0",
-                                                "renderMode": "CANVAS",
-                                                "isLoading": false,
-                                                "parentColumnSpace": 13,
-                                                "parentRowSpace": 10,
-                                                "leftColumn": 20,
-                                                "rightColumn": 44,
-                                                "topRow": 15,
-                                                "bottomRow": 21,
-                                                "parentId": "1ipcbax9uy",
-                                                "dynamicBindingPathList": [],
-                                                "dynamicTriggerPathList": [],
-                                                "borderRadius": "ROUNDED"
-                                            },
-                                            {
-                                                "isVisible": true,
-                                                "widgetName": "Divider1",
-                                                "orientation": "horizontal",
-                                                "capType": "nc",
-                                                "capSide": 0,
-                                                "strokeStyle": "solid",
-                                                "dividerColor": "#EBEBEB",
-                                                "thickness": 2,
-                                                "version": 1,
-                                                "animateLoading": true,
-                                                "classStyle": "",
-                                                "type": "DIVIDER_WIDGET",
-                                                "hideCard": false,
-                                                "displayName": "Divider",
-                                                "key": "9ik9pjogvr",
-                                                "iconSVG": "/static/media/icon.cbe8f608.svg",
-                                                "widgetId": "zn6oj24gj2",
-                                                "renderMode": "CANVAS",
-                                                "isLoading": false,
-                                                "parentColumnSpace": 13,
-                                                "parentRowSpace": 10,
-                                                "leftColumn": 0,
-                                                "rightColumn": 64,
-                                                "topRow": 10,
-                                                "bottomRow": 14,
-                                                "parentId": "1ipcbax9uy",
-                                                "dynamicBindingPathList": [],
-                                                "dynamicTriggerPathList": []
-                                            },
-                                            {
-                                                "isVisible": true,
-                                                "defaultImage": "https://assets.appsmith.com/widgets/default.png",
-                                                "imageShape": "RECTANGLE",
-                                                "maxZoomLevel": 1,
-                                                "enableRotation": false,
-                                                "enableDownload": false,
-                                                "objectFit": "contain",
-                                                "image": "https://upraise.io/wp-content/uploads/2022/05/goal-setting-banner.webp",
-                                                "widgetName": "Image1",
-                                                "version": 1,
-                                                "animateLoading": true,
-                                                "type": "IMAGE_WIDGET",
-                                                "hideCard": false,
-                                                "displayName": "Image",
-                                                "key": "rjo2x9187w",
-                                                "iconSVG": "/static/media/icon.52d8fb96.svg",
-                                                "widgetId": "9uim6d4r8o",
-                                                "renderMode": "CANVAS",
-                                                "isLoading": false,
-                                                "parentColumnSpace": 13,
-                                                "parentRowSpace": 10,
-                                                "leftColumn": 0,
-                                                "rightColumn": 64,
-                                                "topRow": 39,
-                                                "bottomRow": 64,
-                                                "parentId": "1ipcbax9uy",
-                                                "dynamicBindingPathList": [],
-                                                "dynamicTriggerPathList": []
-                                            }
-                                        ],
-                                        "minHeight": 400,
-                                        "widgetId": "1ipcbax9uy",
-                                        "renderMode": "CANVAS",
-                                        "isLoading": false,
-                                        "parentColumnSpace": 1,
-                                        "parentRowSpace": 1,
-                                        "leftColumn": 0,
-                                        "rightColumn": 233.25,
-                                        "topRow": 0,
-                                        "bottomRow": 660,
-                                        "parentId": "wo71byqwx5"
-                                    }
-                                ],
-                                "version": 1,
-                                "classStyle": "frame_section",
-                                "type": "CONTAINER_WIDGET",
-                                "hideCard": false,
-                                "displayName": "Container",
-                                "key": "u970eujtfm",
-                                "iconSVG": "/static/media/icon.1977dca3.svg",
-                                "isCanvas": true,
-                                "widgetId": "wo71byqwx5",
-                                "renderMode": "CANVAS",
-                                "isLoading": false,
-                                "parentColumnSpace": 9.71875,
-                                "parentRowSpace": 10,
-                                "leftColumn": 0,
-                                "rightColumn": 64,
-                                "topRow": 0,
-                                "bottomRow": 66,
-                                "parentId": "0",
-                                "dynamicBindingPathList": [],
-                                "dynamicTriggerPathList": []
-                            }
-                        ],
-                        "snapRows": 59,
-                        "containerStyle": "none",
-                        "canExtend": true,
-                        "version": 57
-                    },
-                    "widgetNames": [
-                        "MainContainer",
-                        "Container3",
-                        "Canvas16",
-                        "Text1",
-                        "Button1",
-                        "Divider1",
-                        "Image1"
-                    ],
-                    "deleted": false,
-                    "policies": [],
-                    "layoutOnLoadActions": [
-                        []
-                    ],
-                    "layoutOnCloseActions": [
-                        []
-                    ]
-                }
-            ]
-        },
-        "createdAt": "2023-08-08T18:02:27.232Z",
-        "updatedAt": "2023-08-08T18:02:27.232Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:pages",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:pages",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
-        "_id": "64d289d7edd3b9b22ecf75f3",
-        "applicationId": "jetsondashboard",
-        "slug": "Page2",
-        "Page": {
-            "name": "Page2",
-            "layouts": [
-                {
-                    "_id": "64d289d7edd3b9b22ecf75f4",
-                    "viewMode": false,
-                    "dsl": {
-                        "widgetName": "MainContainer",
-                        "backgroundColor": "none",
-                        "rightColumn": 1224,
-                        "snapColumns": 64,
-                        "widgetId": "0",
-                        "topRow": 0,
-                        "bottomRow": 820,
-                        "parentRowSpace": 1,
-                        "type": "CANVAS_WIDGET",
-                        "detachFromLayout": true,
-                        "minHeight": 600,
-                        "dynamicBindingPathList": [],
-                        "parentColumnSpace": 1,
-                        "leftColumn": 0,
-                        "children": [
-                            {
-                                "isVisible": true,
-                                "source": "{{Api1.data.length > 0 ? main.env.uiUrl+\"/Login\" : main.env.uiUrl +\"/Page1\"}}",
-                                "borderOpacity": "0",
-                                "borderWidth": "0",
-                                "widgetName": "Iframe1",
-                                "version": 1,
-                                "animateLoading": false,
-                                "type": "IFRAME_WIDGET",
-                                "hideCard": false,
-                                "displayName": "Iframe",
-                                "key": "04zqz5zf7z",
-                                "iconSVG": "/static/media/icon.34169b6a.svg",
-                                "widgetId": "dwzsp8pbih",
-                                "renderMode": "CANVAS",
-                                "isLoading": false,
-                                "parentColumnSpace": 9.71875,
-                                "parentRowSpace": 10,
-                                "leftColumn": 0,
-                                "rightColumn": 64,
-                                "topRow": 0,
-                                "bottomRow": 80,
-                                "parentId": "0",
-                                "dynamicBindingPathList": [
-                                    {
-                                        "key": "source"
-                                    }
-                                ],
-                                "dynamicTriggerPathList": []
-                            }
-                        ],
-                        "snapRows": 59,
-                        "containerStyle": "none",
-                        "canExtend": true,
-                        "version": 57
-                    },
-                    "widgetNames": [
-                        "MainContainer",
-                        "Iframe1"
-                    ],
-                    "deleted": false,
-                    "policies": [],
-                    "layoutOnLoadActions": [
-                        [
-                            {
-                                "_id": "64d28bb6edd3b9b22ecf75f5",
-                                "id": "64d28bb6edd3b9b22ecf75f5",
-                                "confirmBeforeExecute": false,
-                                "name": "Api1",
-                                "pluginType": "API",
-                                "jsonPathKeys": [
-                                    "main.env.nodeUrl"
-                                ],
-                                "timeoutInMillisecond": 10000
-                            }
-                        ]
-                    ],
-                    "layoutOnCloseActions": [
-                        []
-                    ]
-                }
-            ]
-        },
-        "createdAt": "2023-08-08T18:30:47.867Z",
-        "updatedAt": "2023-08-08T18:30:47.867Z",
         "deleted": false,
         "policies": [
             {
