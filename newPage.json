@@ -5113,7 +5113,7 @@
                                                             },
                                                             {
                                                                 "isVisible": "{{makeSetting.responseMeta.statusCode==='200'}}",
-                                                                "text": "<span style='font-size:20px'>Congratulations!</span>\n\nHere are your <span style='color:red'> login credentials</span> for the application. Please make sure to save them securely, as they will be displayed only <span style='color:red'> onces</span>.",
+                                                                "text": "{{makeSetting.data.error === false ? `<span style='font-size:20px'>Congratulations!</span>\n\nHere are your <span style='color:red'> log in credentials</span> for the application. Please make sure to save them securely, as they will be displayed only <span style='color:red'> onces</span>.` :  `<span style='font-size:20px'>Apologies for the inconvenience. It seems that an error has occurred. Kindly attempt your action again in 1 minute. We appreciate your patience.</span>`}}\n",
                                                                 "fontSize": "PARAGRAPH",
                                                                 "fontStyle": "BOLD",
                                                                 "textAlign": "CENTER",
@@ -5142,6 +5142,9 @@
                                                                 "dynamicBindingPathList": [
                                                                     {
                                                                         "key": "isVisible"
+                                                                    },
+                                                                    {
+                                                                        "key": "text"
                                                                     }
                                                                 ],
                                                                 "dynamicTriggerPathList": [],
@@ -5152,7 +5155,7 @@
                                                                 ]
                                                             },
                                                             {
-                                                                "isVisible": "{{makeSetting.responseMeta.statusCode==='200'}}",
+                                                                "isVisible": "{{ makeSetting.responseMeta.statusCode==='200' && !makeSetting.data.error}}",
                                                                 "text": "Login: <span style=\"color:#3268a8;font-size:18px\">{{makeSetting.data.email}}</span></br>Password:  <span style=\"color:#3268a8;font-size:18px\">{{makeSetting.data.password}}</span>",
                                                                 "fontSize": "HEADING3",
                                                                 "fontStyle": "BOLD",
@@ -5203,7 +5206,7 @@
                                                                 ]
                                                             },
                                                             {
-                                                                "isVisible": "{{makeSetting.responseMeta.statusCode==='200'}}",
+                                                                "isVisible": "{{ makeSetting.responseMeta.statusCode==='200' && !makeSetting.data.error}}",
                                                                 "animateLoading": true,
                                                                 "text": "Go to log in",
                                                                 "buttonColor": "#3268a8",
