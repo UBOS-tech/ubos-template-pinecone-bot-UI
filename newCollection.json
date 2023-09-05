@@ -246,7 +246,7 @@
         "id": "64a1c91cedd3b9b22ecf75de",
         "name": "JSObject2",
         "pageId": "BaseDetails",
-        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun2: async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t\n\t}\n}",
+        "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun2: async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t\n\t\tgetManual.run()\n\t}\n}",
         "variables": [
             {
                 "name": "myVar1",
@@ -264,11 +264,39 @@
                 "executeOnLoad": false,
                 "pageId": "BaseDetails",
                 "actionConfiguration": {
-                    "body": "async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t\n\t}",
+                    "body": "async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t\n\t\tgetManual.run()\n\t}",
                     "isAsync": true,
-                    "timeoutInMillisecond": 0,
-                    "jsArguments": []
-                }
+                    "timeoutInMillisecond": 10000,
+                    "jsArguments": [
+                        {
+                            "name": "id"
+                        }
+                    ],
+                    "paginationType": "NONE",
+                    "encodeParamsToggle": true
+                },
+                "_id": "64ae7bf3edd3b9b22ecf75e4",
+                "id": "64ae7bf3edd3b9b22ecf75e4",
+                "applicationId": "jetsondashboard",
+                "datasource": {
+                    "isValid": true,
+                    "messages": [],
+                    "name": "UNUSED_DATASOURCE",
+                    "new": true,
+                    "pluginId": "",
+                    "userPermissions": []
+                },
+                "dynamicBindingPathList": [
+                    {
+                        "key": "body"
+                    }
+                ],
+                "fullyQualifiedName": "JSObject2.myFun2",
+                "isValid": true,
+                "jsonPathKeys": [
+                    "async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t\n\t}"
+                ],
+                "pluginType": "JS"
             }
         ],
         "applicationId": "jetsondashboard",

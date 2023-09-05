@@ -7509,7 +7509,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-26T07:44:29.057Z",
-        "updatedAt": "2023-06-28T07:21:00.646Z",
+        "updatedAt": "2023-09-04T13:29:13.726Z",
         "deleted": false,
         "policies": [
             {
@@ -7589,7 +7589,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-06-26T07:51:03.064Z",
-        "updatedAt": "2023-07-02T15:13:46.754Z",
+        "updatedAt": "2023-09-04T14:23:33.417Z",
         "deleted": false,
         "policies": [
             {
@@ -8913,10 +8913,14 @@
         "executeOnLoad": false,
         "pageId": "BaseDetails",
         "actionConfiguration": {
-            "body": "async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t\n\t}",
+            "body": "async (id) => {\n await storeValue('idToDeleteOb', id)\n await deleteObject.run()\n\t\tgetPDF.run()\n\t\tgetLink.run()\n\t\tgetFiles.run()\n\t\tgetFAQ.run()\t\n\t\tgetManual.run()\n\t}",
             "isAsync": true,
             "timeoutInMillisecond": 10000,
-            "jsArguments": [],
+            "jsArguments": [
+                {
+                    "name": "id"
+                }
+            ],
             "paginationType": "NONE",
             "encodeParamsToggle": true
         },
@@ -9309,7 +9313,7 @@
                         "value": true
                     }
                 ],
-                "body": "{\t\n\t\"bot_token\": \"{{bottoken.text}}\",\n\t\"bot_name\": \"{{botname.text}}\",\n\t\"private_chat\": {{chatid.text}},\n\t\"welcome\": {{JSON.stringify(welcome.text)}}\n}"
+                "body": "{\t\n\t\"bot_token\": \"{{bottoken.text}}\",\n\t\"bot_name\": \"{{botname.text}}\",\n\t\"welcome\": {{JSON.stringify(welcome.text)}}\n}"
             },
             "dynamicBindingPathList": [
                 {
@@ -9323,16 +9327,16 @@
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
-                "chatid.text",
-                "JSON.stringify(welcome.text)",
                 "bottoken.text",
-                "botname.text"
+                "botname.text",
+                "chatid.text",
+                "JSON.stringify(welcome.text)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-08-03T11:06:03.469Z",
-        "updatedAt": "2023-08-03T11:14:00.146Z",
+        "updatedAt": "2023-09-04T12:15:29.878Z",
         "deleted": false,
         "policies": [
             {
@@ -9845,6 +9849,253 @@
         },
         "createdAt": "2023-08-08T19:50:47.061Z",
         "updatedAt": "2023-08-09T15:50:29.648Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "64f5dbb0c2384a9dd0af7c29",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "saveVector",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/updateObjectsBase"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "BaseDetails",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"link\": {{JSON.stringify(manuallname.text)}},\n\t\"name\": {{JSON.stringify(manuallname.text)}},\n\t\"id\": \"{{main.URL.queryParams._id}}\",\n\t\"type\": \"Manual\",\n\t\"result\": {{JSON.stringify(manualanswer.text)}},\n\t\"question\": {{JSON.stringify(manualques.text)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl",
+                "JSON.stringify(manuallname.text)",
+                "main.URL.queryParams._id",
+                "JSON.stringify(manualanswer.text)",
+                "JSON.stringify(manualques.text)",
+                "main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-09-04T14:06:58.313Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2023-09-04T13:29:20.709Z,2023-09-04T14:09:00.287Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-09-04T13:29:20.709Z",
+        "updatedAt": "2023-09-04T14:14:13.780Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "64f5dd37c2384a9dd0af7c2a",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "getManual",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/getKnowlegeObjectManual"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "BaseDetails",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "GET",
+                "headers": [],
+                "queryParameters": [
+                    {
+                        "key": "id",
+                        "value": "{{main.URL.queryParams._id}}"
+                    }
+                ],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "queryParameters[0].value"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl",
+                "main.URL.queryParams._id"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-09-04T13:35:51.147Z",
+        "updatedAt": "2023-09-04T14:23:41.670Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "64f71168c2384a9dd0af7c2b",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "newVector",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/addVector"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "Vectors",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "PUT",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\"question\": {{JSON.stringify(Input_questionAdd.text)}},\n\"result\":{{JSON.stringify(Input_answerAdd.text)}},\n\"url\": {{JSON.stringify(getVectors.data[0].name)}},\n\"id \": \"{{main.URL.queryParams.id}}\",\n\"status\":{{JSON.stringify(getVectors.data[0].status)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl",
+                "JSON.stringify(Input_questionAdd.text)",
+                "JSON.stringify(Input_answerAdd.text)",
+                "JSON.stringify(getVectors.data[0].name)",
+                "main.URL.queryParams.id",
+                "JSON.stringify(getVectors.data[0].status)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-09-05T11:30:48.543Z",
+        "updatedAt": "2023-09-05T12:27:29.444Z",
         "deleted": false,
         "policies": [
             {
