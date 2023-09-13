@@ -4532,23 +4532,25 @@
                                 "widgetName": "Tabs1",
                                 "animateLoading": true,
                                 "tabsObj": {
-                                    "tab1": {
-                                        "label": "login",
-                                        "id": "tab1",
-                                        "widgetId": "9u5pjsw06f",
-                                        "isVisible": true,
-                                        "index": 0
-                                    },
                                     "tab2": {
                                         "label": "setting",
                                         "id": "tab2",
                                         "widgetId": "vv8ufepqz8",
                                         "isVisible": "{{getData.data.length===0}}",
-                                        "index": 1
+                                        "index": 0,
+                                        "isDuplicateLabel": false
+                                    },
+                                    "tab1": {
+                                        "label": "login",
+                                        "id": "tab1",
+                                        "widgetId": "9u5pjsw06f",
+                                        "isVisible": true,
+                                        "index": 1,
+                                        "isDuplicateLabel": false
                                     }
                                 },
                                 "shouldShowTabs": false,
-                                "defaultTab": "{{getData.data.length>0?'login':'setting'}}",
+                                "defaultTab": "{{getData.data.length < 1 ? 'setting': 'login'}}",
                                 "version": 3,
                                 "type": "TABS_WIDGET",
                                 "hideCard": false,
@@ -13819,10 +13821,10 @@
                                                                 "parentId": "7nt3wtc9ak",
                                                                 "dynamicBindingPathList": [
                                                                     {
-                                                                        "key": "isDisabled"
+                                                                        "key": "tooltip"
                                                                     },
                                                                     {
-                                                                        "key": "tooltip"
+                                                                        "key": "isDisabled"
                                                                     }
                                                                 ],
                                                                 "dynamicTriggerPathList": [
@@ -14148,10 +14150,11 @@
                                                                 "columnSizeMap": {
                                                                     "task": 245,
                                                                     "step": 62,
-                                                                    "status": 173,
+                                                                    "status": 136,
                                                                     "name": 172,
                                                                     "createdAt": 188,
-                                                                    "customColumn2": 128
+                                                                    "customColumn2": 128,
+                                                                    "file": 87
                                                                 },
                                                                 "columnOrder": [
                                                                     "name",
