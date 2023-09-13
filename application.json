@@ -10,7 +10,7 @@
     "pages": [
         {
             "_id": "Login",
-            "isDefault": false
+            "isDefault": true
         },
         {
             "_id": "Registration",
@@ -54,7 +54,7 @@
         },
         {
             "_id": "App settings",
-            "isDefault": true
+            "isDefault": false
         },
         {
             "_id": "Vectors",

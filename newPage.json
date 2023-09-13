@@ -12376,7 +12376,7 @@
                                                                         "label": "",
                                                                         "computedValue": "",
                                                                         "buttonStyle": "rgb(3, 179, 101)",
-                                                                        "buttonColor": "#03b365",
+                                                                        "buttonColor": "#3b82ff",
                                                                         "menuColor": "#03B365",
                                                                         "labelColor": "#FFFFFF",
                                                                         "iconName": "",
@@ -12420,7 +12420,7 @@
                                                                         "label": "",
                                                                         "computedValue": "",
                                                                         "buttonStyle": "rgb(3, 179, 101)",
-                                                                        "buttonColor": "#03b365",
+                                                                        "buttonColor": "#3b82ff",
                                                                         "menuColor": "#03B365",
                                                                         "labelColor": "#FFFFFF",
                                                                         "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Edit vectors'))}}"
@@ -13482,12 +13482,12 @@
                                                                         "label": "",
                                                                         "computedValue": "",
                                                                         "buttonStyle": "rgb(3, 179, 101)",
-                                                                        "buttonColor": "#03B365",
+                                                                        "buttonColor": "#3b82ff",
                                                                         "menuColor": "#03B365",
                                                                         "labelColor": "#FFFFFF",
                                                                         "iconName": "",
                                                                         "buttonLabel": "{{Table3.sanitizedTableData.map((currentRow) => ( 'Edit vectors'))}}",
-                                                                        "onClick": "{{navigateTo('Vectors',{'id': currentRow._id})}}"
+                                                                        "onClick": "{{navigateTo('Vectors',{'id': currentRow._id},'NEW_WINDOW')}}"
                                                                     }
                                                                 },
                                                                 "derivedColumns": {
@@ -13525,7 +13525,7 @@
                                                                         "label": "",
                                                                         "computedValue": "",
                                                                         "buttonStyle": "rgb(3, 179, 101)",
-                                                                        "buttonColor": "#03B365",
+                                                                        "buttonColor": "#3b82ff",
                                                                         "menuColor": "#03B365",
                                                                         "labelColor": "#FFFFFF",
                                                                         "iconName": "",
@@ -13589,9 +13589,6 @@
                                                                     }
                                                                 ],
                                                                 "dynamicPropertyPathList": [
-                                                                    {
-                                                                        "key": "primaryColumns.customColumn2.onClick"
-                                                                    },
                                                                     {
                                                                         "key": "primaryColumns.customColumn2.isDisabled"
                                                                     }
@@ -14096,7 +14093,7 @@
                                                                         "label": "",
                                                                         "computedValue": "",
                                                                         "buttonStyle": "rgb(3, 179, 101)",
-                                                                        "buttonColor": "#03B365",
+                                                                        "buttonColor": "#3b82ff",
                                                                         "menuColor": "#03B365",
                                                                         "labelColor": "#FFFFFF",
                                                                         "iconName": "",
@@ -14139,7 +14136,7 @@
                                                                         "label": "",
                                                                         "computedValue": "",
                                                                         "buttonStyle": "rgb(3, 179, 101)",
-                                                                        "buttonColor": "#03B365",
+                                                                        "buttonColor": "#3b82ff",
                                                                         "menuColor": "#03B365",
                                                                         "labelColor": "#FFFFFF",
                                                                         "iconName": "",
@@ -14151,10 +14148,10 @@
                                                                 "columnSizeMap": {
                                                                     "task": 245,
                                                                     "step": 62,
-                                                                    "status": 75,
-                                                                    "name": 214,
-                                                                    "createdAt": 112,
-                                                                    "customColumn2": 100
+                                                                    "status": 173,
+                                                                    "name": 172,
+                                                                    "createdAt": 188,
+                                                                    "customColumn2": 128
                                                                 },
                                                                 "columnOrder": [
                                                                     "name",
@@ -14203,9 +14200,6 @@
                                                                 "dynamicPropertyPathList": [
                                                                     {
                                                                         "key": "primaryColumns.customColumn2.isDisabled"
-                                                                    },
-                                                                    {
-                                                                        "key": "primaryColumns.customColumn2.onClick"
                                                                     },
                                                                     {
                                                                         "key": "primaryColumns.customColumn1.onClick"
@@ -16997,7 +16991,7 @@
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
                                                 "topRow": 4,
-                                                "bottomRow": 11,
+                                                "bottomRow": 10,
                                                 "parentId": "6vyn2fuzvn",
                                                 "dynamicBindingPathList": [
                                                     {
@@ -17037,7 +17031,7 @@
                                                 "parentRowSpace": 10,
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
-                                                "topRow": 11,
+                                                "topRow": 10,
                                                 "bottomRow": 30,
                                                 "parentId": "6vyn2fuzvn",
                                                 "dynamicBindingPathList": [
@@ -18291,7 +18285,7 @@
                                                                     }
                                                                 ],
                                                                 "borderRadius": "ROUNDED",
-                                                                "onClick": "{{newVector.run(() => getVectors.run(()=> closeModal('Modal2')), () => {})}}",
+                                                                "onClick": "{{newVector.run(() => (getVectors.run(),closeModal('Modal2')), () => {})}}",
                                                                 "dynamicPropertyPathList": [
                                                                     {
                                                                         "key": "onClick"
