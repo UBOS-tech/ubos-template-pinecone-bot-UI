@@ -9819,7 +9819,7 @@
             "executeOnLoad": false,
             "pageId": "Login",
             "actionConfiguration": {
-                "timeoutInMillisecond": "30000",
+                "timeoutInMillisecond": "40000",
                 "encodeParamsToggle": true,
                 "httpMethod": "GET",
                 "headers": [],
@@ -9848,7 +9848,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-08-08T19:50:47.061Z",
-        "updatedAt": "2023-09-13T11:59:32.470Z",
+        "updatedAt": "2023-09-18T07:10:08.755Z",
         "deleted": false,
         "policies": [
             {
