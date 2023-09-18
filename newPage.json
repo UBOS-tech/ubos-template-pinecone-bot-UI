@@ -5149,12 +5149,17 @@
                                                                         "key": "text"
                                                                     }
                                                                 ],
-                                                                "dynamicTriggerPathList": [],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
                                                                 "dynamicPropertyPathList": [
                                                                     {
                                                                         "key": "isVisible"
                                                                     }
-                                                                ]
+                                                                ],
+                                                                "onClick": ""
                                                             },
                                                             {
                                                                 "isVisible": "{{ makeSetting.responseMeta.statusCode==='200' && !makeSetting.data.error}}",
@@ -5197,7 +5202,7 @@
                                                                         "key": "onClick"
                                                                     }
                                                                 ],
-                                                                "onClick": "{{(copyToClipboard('Login: '+ makeSetting.data.email+'  '+'Password: '+makeSetting.data.password), showAlert('Credentials copied', 'success'))}}",
+                                                                "onClick": "{{(copyToClipboard('Login: '+ makeSetting.data.email+'  '+'Password: '+makeSetting.data.password), showAlert('Credentials copied', 'success'));download('Login: '+ makeSetting.data.email+'  '+'Password: '+makeSetting.data.password,'credentialsAIBot','text/plain')}}",
                                                                 "dynamicPropertyPathList": [
                                                                     {
                                                                         "key": "onClick"
@@ -5252,6 +5257,52 @@
                                                                     }
                                                                 ],
                                                                 "onClick": "{{getData.run()}}"
+                                                            },
+                                                            {
+                                                                "isVisible": "{{ makeSetting.responseMeta.statusCode==='200' && !makeSetting.data.error}}",
+                                                                "iconName": "duplicate",
+                                                                "borderRadius": "CIRCLE",
+                                                                "boxShadow": "NONE",
+                                                                "buttonColor": "#3268a8",
+                                                                "buttonVariant": "TERTIARY",
+                                                                "isDisabled": false,
+                                                                "widgetName": "IconButton1",
+                                                                "version": 1,
+                                                                "animateLoading": true,
+                                                                "type": "ICON_BUTTON_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Icon Button",
+                                                                "key": "5to4x72at1",
+                                                                "iconSVG": "/static/media/icon.1a0c634a.svg",
+                                                                "widgetId": "ffz0b10t5v",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 9.09375,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 45,
+                                                                "rightColumn": 49,
+                                                                "topRow": 31,
+                                                                "bottomRow": 39,
+                                                                "parentId": "ux8gda7g29",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    },
+                                                                    {
+                                                                        "key": "onClick"
+                                                                    }
+                                                                ],
+                                                                "onClick": "{{(copyToClipboard('Login: '+ makeSetting.data.email+'  '+'Password: '+makeSetting.data.password), showAlert('Credentials copied', 'success'));download('Login: '+ makeSetting.data.email+'  '+'Password: '+makeSetting.data.password,'credentialsAIBot','text/plain')}}"
                                                             }
                                                         ],
                                                         "minHeight": 400,
@@ -5350,7 +5401,8 @@
                         "Image1",
                         "Text4",
                         "Text5",
-                        "Button2"
+                        "Button2",
+                        "IconButton1"
                     ],
                     "deleted": false,
                     "policies": [],
