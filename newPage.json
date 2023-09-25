@@ -10005,9 +10005,9 @@
     {
         "_id": "64957d358fa6a827de155b3f",
         "applicationId": "jetsondashboard",
-        "slug": "Base",
+        "slug": "Knowledge Base",
         "Page": {
-            "name": "Base",
+            "name": "Knowledge Base",
             "layouts": [
                 {
                     "_id": "64957d358fa6a827de155b40",
@@ -14990,7 +14990,7 @@
                                                                 ],
                                                                 "iconName": "arrow-left",
                                                                 "iconAlign": "left",
-                                                                "onClick": "{{navigateTo('Base', {})}}"
+                                                                "onClick": "{{navigateTo('Knowledge Base', {})}}"
                                                             }
                                                         ],
                                                         "minHeight": 400,
@@ -17480,7 +17480,7 @@
                                                                                 "leftColumn": 0,
                                                                                 "rightColumn": 56,
                                                                                 "topRow": 0,
-                                                                                "bottomRow": 5,
+                                                                                "bottomRow": 4,
                                                                                 "parentId": "dvghvnxgbp",
                                                                                 "logBlackList": {
                                                                                     "isVisible": true,
@@ -17610,7 +17610,7 @@
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 0,
                                                                                 "rightColumn": 64,
-                                                                                "topRow": 5,
+                                                                                "topRow": 4,
                                                                                 "bottomRow": 18,
                                                                                 "parentId": "dvghvnxgbp",
                                                                                 "logBlackList": {
